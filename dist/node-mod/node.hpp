@@ -5,6 +5,8 @@
  * \param cl
  */
 #include <memory>
+#include <utility>
+
 namespace linears_dh
 {
 	//node base class `has no implementation`
@@ -29,10 +31,14 @@ namespace linears_dh
 		// init constructor
 		dbl_node() = default;
 		// ReSharper disable once CppNonExplicitConvertingConstructor
-		dbl_node(Ty const& val, const __pointer_t& n = nullptr, const __pointer_t& p = nullptr) :
-			data(val), next(n), prev(p)
-			{
-			}
+		dbl_node(
+			Ty val, 
+			const __pointer_t& n = nullptr, 
+			const __pointer_t& p = nullptr
+		) : data(std::move(val)), next(n), prev(p)
+		{
+		}
+		
 		// copy constructor
 		explicit dbl_node(dbl_node const& dn) noexcept :
 			data(dn.data), next(dn.next), prev(dn.prev)

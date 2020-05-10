@@ -147,8 +147,8 @@ namespace linears_dh
 		}//end destructor
 
 		// stretcher methods
-		constexpr size_t size() const { return _size; }
-		constexpr bool is_empty() const { return _size == 0; }
+		_NODISCARD constexpr size_t size() const { return _size; }
+		_NODISCARD constexpr bool is_empty() const { return _size == 0; }
 
 		/**@author Daniel Herrera
 		 * name: push_back
@@ -196,7 +196,21 @@ namespace linears_dh
 		 * name: push_front
 		 * 
 		 */
-		void push_front(const _Ty& val);
+		void push_front(const _Ty& val)
+		{
+			auto* node = new dbl_node<_Ty>;
+			node->data = val;
+			node->next = _head;
+			node->prev = nullptr;
+			if (is_empty())
+				_head = _tail = node;
+			else {
+				_head->prev = node;
+				_head = node;
+			}
+			++_size;
+		}
+		
 		_Ty pop_front();
 		void insert(const unsigned pos, const _Ty& rval); //inserts and replaces at position
 		void insert_before();

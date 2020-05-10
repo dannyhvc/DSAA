@@ -86,11 +86,12 @@ BOOST_AUTO_TEST_CASE(case4_util)
 
 BOOST_AUTO_TEST_CASE(case5_dbl_ll)
 {
+	// pop_back test
 	r.start();
 	auto* str_lst1(new linears_dh::Double_linked_list<string>);
-	str_lst1->push_back("pos1");
-	str_lst1->push_back("pos2");
-	str_lst1->push_back("pos3");
+	for (size_t i = 0; i < 10; ++i) 
+		str_lst1->push_back("pos" + to_string(i));
+	
 	str_lst1->pop_back();
 	delete str_lst1;
 	r.finish();
@@ -102,10 +103,23 @@ BOOST_AUTO_TEST_CASE(case5_dbl_ll)
 BOOST_AUTO_TEST_CASE(case6_dbl_ll)
 {
 	r.start();
+	auto* lst_dbl (new linears_dh::Double_linked_list<double>);
+	for (unsigned i = 0; i < 10; ++i)
+		lst_dbl->push_front(static_cast<double>(i));
+	delete lst_dbl;
 	r.finish();
 	//
 	//
-	PRINT r.logging("| case 5: <linears_dh::push_front=D_l_l-test>");
+	PRINT r.logging("| case 6: <linears_dh::push_front=D_l_l-test>");
+}
+
+BOOST_AUTO_TEST_CASE(case7_dbl_ll)
+{
+	r.start();
+	r.finish();
+	//
+	//
+	PRINT r.logging("| case 7: <linears_dh::insert=D_l_l-test>");
 }
 
 
