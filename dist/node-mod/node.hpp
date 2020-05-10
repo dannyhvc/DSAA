@@ -29,19 +29,24 @@ namespace linears_dh
 		// init constructor
 		dbl_node() = default;
 		// ReSharper disable once CppNonExplicitConvertingConstructor
-		dbl_node(Ty const& val) :
-			data(val) {}
-
+		dbl_node(Ty const& val, const __pointer_t& n = nullptr, const __pointer_t& p = nullptr) :
+			data(val), next(n), prev(p)
+			{
+			}
 		// copy constructor
 		explicit dbl_node(dbl_node const& dn) noexcept :
-			data(dn.data), next(dn.next), prev(dn.prev) {}
+			data(dn.data), next(dn.next), prev(dn.prev)
+			{
+			}
 		explicit dbl_node(__const_pointer_t& pdn) noexcept :
-			data(pdn->data), next(pdn->next), prev(pdn->prev) {}
-		~dbl_node() { delete next, delete prev; }; // inline destructor
+			data(pdn->data), next(pdn->next), prev(pdn->prev)
+			{
+			}
+		~dbl_node() = default; // inline destructor
 
-		Ty		data = 0;
-		__pointer_t next = nullptr;
-		__pointer_t prev = nullptr;
+				 Ty data;
+		__pointer_t next;
+		__pointer_t prev;
 	};
 
 	template <typename Ty>	class
@@ -56,17 +61,21 @@ namespace linears_dh
 		using __const_pointer_t = const sngl_node<Ty>*;
 		
 		sngl_node() = default;
-		sngl_node(const Ty val, __const_pointer_t& nxt = nullptr) :
-			data(val), next(nxt) {}
-
+		explicit sngl_node(const Ty& val, __const_pointer_t& nxt = nullptr) :
+			data(val), next(nxt)
+			{
+			}
 		explicit sngl_node(const sngl_node& sn) :
-			data(sn.data), next(sn.data) {}
+			data(sn.data), next(sn.data)
+			{
+			}
 		explicit sngl_node(__const_pointer_t& psn) :
-			data(psn->data), next(psn->next) {}
+			data(psn->data), next(psn->next)
+			{
+			}
+		~sngl_node() = default;
 
-		~sngl_node() { delete next; }
-
-		Ty		data = 0;
-		__pointer_t next = nullptr;
+				 Ty	data;
+		__pointer_t next;
 	};
 }

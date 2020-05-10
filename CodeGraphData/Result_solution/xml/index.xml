@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="classutil_1_1csv" kind="class"><name>util::csv</name>
+    <member refid="classutil_1_1csv_1a81f5b083ffba0bbd776f1f834dee4f38" kind="variable"><name>fname_cs_</name></member>
+    <member refid="classutil_1_1csv_1ae609fb2e100527cf563af7b97e2c3331" kind="variable"><name>solution_</name></member>
+    <member refid="classutil_1_1csv_1a7bbfe66c7dfb4b7b2f538d8cffc37289" kind="function"><name>csv</name></member>
+    <member refid="classutil_1_1csv_1a2ef8657f1a018d6a8d6d864c35c61b03" kind="function"><name>~csv</name></member>
+    <member refid="classutil_1_1csv_1a0653480eb0eae9c4d28d568a78afdc8e" kind="function"><name>read_csv</name></member>
+    <member refid="classutil_1_1csv_1ae91d47a184d91977aa8bcce0d5cf06a6" kind="function"><name>parse</name></member>
+    <member refid="classutil_1_1csv_1a9a1e8aa43aa2f2281d9976754c653216" kind="function"><name>str</name></member>
+  </compound>
+  <compound refid="classlinears__dh_1_1dbl__node" kind="class"><name>linears_dh::dbl_node</name>
+    <member refid="classlinears__dh_1_1dbl__node_1a312fcd1e68ddf3582f658a3bcca91dad" kind="typedef"><name>__pointer_t</name></member>
+    <member refid="classlinears__dh_1_1dbl__node_1a8ad1264e53aca85fd43e40013207fe74" kind="typedef"><name>__const_pointer_t</name></member>
+    <member refid="classlinears__dh_1_1dbl__node_1a152c5cc45a942665ae3a9860c7aaae94" kind="typedef"><name>pointer_type</name></member>
+    <member refid="classlinears__dh_1_1dbl__node_1ad7d20d9476a366ca858e7aa3aa3bb4b2" kind="typedef"><name>const_pointer_type</name></member>
+    <member refid="classlinears__dh_1_1dbl__node_1a1d1c9cc74bfd5f10a060936f88c41230" kind="variable"><name>data</name></member>
+    <member refid="classlinears__dh_1_1dbl__node_1ac87a0769eaf7e2652e3f26aa6932fff0" kind="variable"><name>next</name></member>
+    <member refid="classlinears__dh_1_1dbl__node_1a6165f380354bacf5bbac0f162a176cbe" kind="variable"><name>prev</name></member>
+    <member refid="classlinears__dh_1_1dbl__node_1af86a6d67d76616da9950fbd0c5549b43" kind="function"><name>dbl_node</name></member>
+    <member refid="classlinears__dh_1_1dbl__node_1a171d1a0f37580aba13728e06ab792a15" kind="function"><name>dbl_node</name></member>
+    <member refid="classlinears__dh_1_1dbl__node_1a6f1d945876801f321d6654f8669b3612" kind="function"><name>dbl_node</name></member>
+    <member refid="classlinears__dh_1_1dbl__node_1a0c299be5214c5689b847877f85ebfe53" kind="function"><name>dbl_node</name></member>
+    <member refid="classlinears__dh_1_1dbl__node_1ab4541a70f0c7fc6fcd265f4e59442729" kind="function"><name>~dbl_node</name></member>
+  </compound>
+  <compound refid="classlinears__dh_1_1_double__linked__list" kind="class"><name>linears_dh::Double_linked_list</name>
+    <member refid="classlinears__dh_1_1_double__linked__list_1a914aa83ab2ed68b685008d168c746082" kind="typedef"><name>__pointer_t</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1a48c5af5040c01b9c747abd899c3bcdc7" kind="typedef"><name>__const_pointer_t</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1a593a72612eeec345b41cc028ea50b0ad" kind="typedef"><name>pointer_type</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1a2861a84c4629121c12421de3e5b065f9" kind="typedef"><name>const_pointer_type</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1a67171474c4da6cc8efe0c7fafefd2b2d" kind="friend"><name>iterator</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1a3981d9afd6ee8587aba013a0ea34e5a3" kind="variable"><name>_head</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1aac7f683bb37ccd5d6b3c48bc6130483b" kind="variable"><name>_tail</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1a3bc10f06a2345becb8fc631fb5141128" kind="variable"><name>_size</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1a751b63e41155edb4c4effd19a8d8e5ea" kind="function"><name>begin</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1ac0dc059cf852391cdbd38ad4941ac78d" kind="function"><name>end</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1a74cb1ae8288719ee824a3fbb642abf81" kind="function"><name>Double_linked_list</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1a36be4fdc98737b050c78676da0e7fef5" kind="function"><name>Double_linked_list</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1ab27faa748779569a2f57fecd12a76692" kind="function"><name>Double_linked_list</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1a647226afc51c7548a7933cd77d1d7c7a" kind="function"><name>~Double_linked_list</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1a02f91c7e69bee9aca78573abaf9db3a0" kind="function"><name>size</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1af04f71d3a68896f3c77c7f6a7d283844" kind="function"><name>is_empty</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1a07411197af1bb7187a5fa980247b96e1" kind="function"><name>push_back</name></member>
+  </compound>
+  <compound refid="classlinears__dh_1_1_double__linked__list_1_1iterator" kind="class"><name>linears_dh::Double_linked_list::iterator</name>
+    <member refid="classlinears__dh_1_1_double__linked__list_1_1iterator_1aa75e14399e3742686d3762d148c69925" kind="typedef"><name>__pointer_t</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1_1iterator_1a600a50c4887e39056762e452efa0da9d" kind="typedef"><name>__const_pointer_t</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1_1iterator_1a1117516d947d6b8cb0865f8d50ce90f0" kind="variable"><name>_pointer_node</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1_1iterator_1a5f8e43d505063eaa6ccee93fdbfcfc88" kind="function"><name>iterator</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1_1iterator_1a084ff0dd0b5b38d4c1b7ac53a0e5d771" kind="function"><name>iterator</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1_1iterator_1a2c817877d91156e4341e291533dc1ef1" kind="function"><name>iterator</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1_1iterator_1a45ddcd1df068302d900cbdb610c21913" kind="function"><name>~iterator</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1_1iterator_1a33cf255a24a22c02af5050b2037adefc" kind="function"><name>operator=</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1_1iterator_1a138064172b624bc8c3634f32d9de9d4b" kind="function"><name>operator++</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1_1iterator_1a9e0d59855511363949a5ed7a355fc1ff" kind="function"><name>operator++</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1_1iterator_1a9e2f52db671a4beefb5d100c12bbcbc3" kind="function"><name>operator--</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1_1iterator_1a31397bde25a1769056aa5e0eb90aec79" kind="function"><name>operator--</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1_1iterator_1a05f2c5d847fff72f939560cfe3879658" kind="function"><name>operator+</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1_1iterator_1a7b10f03173120a2e6504d0846b251a61" kind="function"><name>operator-</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1_1iterator_1a3ebade7051dac73e245dbd1311a9b632" kind="function"><name>operator==</name></member>
+    <member refid="classlinears__dh_1_1_double__linked__list_1_1iterator_1af731bc2729bcb98c59bc7378dbb56f07" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="classlinears__dh_1_1_node" kind="class"><name>linears_dh::Node</name>
+    <member refid="classlinears__dh_1_1_node_1a49fcf524791eef6f0f141cede390f0ae" kind="typedef"><name>pointer_type</name></member>
+    <member refid="classlinears__dh_1_1_node_1ad783ef70540ffbffbaa580d0aca436b2" kind="typedef"><name>const_pointer_type</name></member>
+  </compound>
+  <compound refid="classutil_1_1_run_timer" kind="class"><name>util::RunTimer</name>
+    <member refid="classutil_1_1_run_timer_1ab428cb6f0e4f01e4a5580affc49f4611" kind="typedef"><name>time_unit</name></member>
+    <member refid="classutil_1_1_run_timer_1a23af5aeeadc910d517cc767e3e9219d1" kind="variable"><name>start_time_point_</name></member>
+    <member refid="classutil_1_1_run_timer_1a6e4c93791076eabf205198dc5c9ad686" kind="variable"><name>end_time_point_</name></member>
+    <member refid="classutil_1_1_run_timer_1a33a4254f3534c10f47a0ec0a8208c821" kind="variable"><name>CONVERT_2MSECONDS</name></member>
+    <member refid="classutil_1_1_run_timer_1af28e288f32bbe198a6e2cad54f62c0de" kind="function"><name>RunTimer</name></member>
+    <member refid="classutil_1_1_run_timer_1ab3c2f11af315014b08cf2f8e68f79093" kind="function"><name>~RunTimer</name></member>
+    <member refid="classutil_1_1_run_timer_1a15785614a8a10dc207167a116c757a43" kind="function"><name>start</name></member>
+    <member refid="classutil_1_1_run_timer_1a1799e5cd49103e64315d3eef3872bb6c" kind="function"><name>finish</name></member>
+    <member refid="classutil_1_1_run_timer_1af2ef719b5d756f2c156fd63c9cc47cc0" kind="function"><name>elapsed</name></member>
+    <member refid="classutil_1_1_run_timer_1ab7299c0b95479e6b3f761f549d65034c" kind="function"><name>logging</name></member>
+  </compound>
+  <compound refid="classlinears__dh_1_1sngl__node" kind="class"><name>linears_dh::sngl_node</name>
+    <member refid="classlinears__dh_1_1sngl__node_1afc1abfdb4b76211df8431501fbb2513d" kind="typedef"><name>pointer_type</name></member>
+    <member refid="classlinears__dh_1_1sngl__node_1a524df7e0fd1f1703b2139c342971a25b" kind="typedef"><name>const_pointer_type</name></member>
+    <member refid="classlinears__dh_1_1sngl__node_1aafd032cf9aa2a4d1807fe0c35f65e7a5" kind="typedef"><name>__pointer_t</name></member>
+    <member refid="classlinears__dh_1_1sngl__node_1a7be40f400034f5984226e1bc3c7054cd" kind="typedef"><name>__const_pointer_t</name></member>
+    <member refid="classlinears__dh_1_1sngl__node_1a5290795fbd08a6c8e516cf1682c0708e" kind="variable"><name>data</name></member>
+    <member refid="classlinears__dh_1_1sngl__node_1a5a543069731aaad4a7ae12bfefda50b1" kind="variable"><name>next</name></member>
+    <member refid="classlinears__dh_1_1sngl__node_1aee6fa800ddee24553d5eed861bff60aa" kind="function"><name>sngl_node</name></member>
+    <member refid="classlinears__dh_1_1sngl__node_1a004b7d8260c7c761593bc43677ff1a8d" kind="function"><name>sngl_node</name></member>
+    <member refid="classlinears__dh_1_1sngl__node_1a2467faf9b5b572c99ff2b833b5425fce" kind="function"><name>sngl_node</name></member>
+    <member refid="classlinears__dh_1_1sngl__node_1abab62421705515e6a90717e40d99fa41" kind="function"><name>sngl_node</name></member>
+    <member refid="classlinears__dh_1_1sngl__node_1a5a8b56ecf1b1f38fa7969d70fb77af7f" kind="function"><name>~sngl_node</name></member>
+  </compound>
+  <compound refid="namespacelinears__dh" kind="namespace"><name>linears_dh</name>
+  </compound>
+  <compound refid="namespacelinears__dh_1_1static__dlist__dh" kind="namespace"><name>linears_dh::static_dlist_dh</name>
+    <member refid="namespacelinears__dh_1_1static__dlist__dh_1a5394ed75ebad6b8ab1d943a916d1dd42" kind="function"><name>begin</name></member>
+    <member refid="namespacelinears__dh_1_1static__dlist__dh_1a01986c30d60faea8087f0b2dce97bfb3" kind="function"><name>end</name></member>
+    <member refid="namespacelinears__dh_1_1static__dlist__dh_1a66262efcb0c7cd2973057aca8eb14b7b" kind="function"><name>begin</name></member>
+    <member refid="namespacelinears__dh_1_1static__dlist__dh_1a35c1be54b973405707a9cfbfb0c4289f" kind="function"><name>end</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="namespaceutil" kind="namespace"><name>util</name>
+    <member refid="namespaceutil_1a6dddadf54219a5e7d7fcbf0afa8e53c5" kind="function"><name>split</name></member>
+  </compound>
+  <compound refid="double__linked__list_8cpp" kind="file"><name>double_linked_list.cpp</name>
+  </compound>
+  <compound refid="double__linked__list_8hpp" kind="file"><name>double_linked_list.hpp</name>
+  </compound>
+  <compound refid="node_8cpp" kind="file"><name>node.cpp</name>
+  </compound>
+  <compound refid="node_8hpp" kind="file"><name>node.hpp</name>
+  </compound>
+  <compound refid="util_8cpp" kind="file"><name>util.cpp</name>
+  </compound>
+  <compound refid="util_8hpp" kind="file"><name>util.hpp</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ab340a5e76af466a5f20ec5500d30a80b" kind="define"><name>BOOST_TEST_MAIN</name></member>
+    <member refid="main_8cpp_1a6b2a3852db8bb19ab6909bac01859985" kind="define"><name>BOOST_TEST_MODULE</name></member>
+    <member refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" kind="define"><name>PRINT</name></member>
+    <member refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kind="variable"><name>r</name></member>
+    <member refid="main_8cpp_1ad08561527946b6bd8a327ccc6548b88f" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="main_8cpp_1a106b4dfe75f42168e7112cf418bbf6c3" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="main_8cpp_1a2e7a5b8d5c8151fe7c2a283d6568ab46" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="main_8cpp_1aa0e384194607e9250f9faae9663c5f8d" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="main_8cpp_1a1c03069360f1f90a556eb537e0ff8a72" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_1cface11b071f90c69bde708b88072b8" kind="dir"><name>C:/#GITHUB</name>
+  </compound>
+  <compound refid="dir_dafe45fb12c08d8a3e105071934adda9" kind="dir"><name>C:/#GITHUB/Play-Ground2/compsci</name>
+  </compound>
+  <compound refid="dir_e2ce68eedddf268a379f03c51bc150df" kind="dir"><name>C:/#GITHUB/Play-Ground2/compsci/dist</name>
+  </compound>
+  <compound refid="dir_3cf3ab91fb6802809500c7c3bd4d7939" kind="dir"><name>C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod</name>
+  </compound>
+  <compound refid="dir_686c07201ceec9f6d1ebcb2209e88667" kind="dir"><name>C:/#GITHUB/Play-Ground2/compsci/dist/node-mod</name>
+  </compound>
+  <compound refid="dir_d16f83ada9fb1eb8a4dde37651fdf9bc" kind="dir"><name>C:/#GITHUB/Play-Ground2</name>
+  </compound>
+  <compound refid="dir_c5c0daff370aa6fffdb8c0583f90ba68" kind="dir"><name>C:/#GITHUB/Play-Ground2/compsci/testing_proj</name>
+  </compound>
+  <compound refid="dir_d48d709c52d227c0f54c7b259e61f386" kind="dir"><name>C:/#GITHUB/Play-Ground2/compsci/dist/util-mod</name>
+  </compound>
+</doxygenindex>

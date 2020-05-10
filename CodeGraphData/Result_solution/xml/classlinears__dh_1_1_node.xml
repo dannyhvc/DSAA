@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classlinears__dh_1_1_node" kind="class" prot="public">
+    <compoundname>linears_dh::Node</compoundname>
+    <derivedcompoundref refid="classlinears__dh_1_1dbl__node" prot="public" virt="non-virtual">linears_dh::dbl_node&lt; Ty &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classlinears__dh_1_1sngl__node" prot="public" virt="non-virtual">linears_dh::sngl_node&lt; Ty &gt;</derivedcompoundref>
+    <includes refid="node_8hpp" local="no">node.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Ty</declname>
+        <defname>Ty</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlinears__dh_1_1_node_1a49fcf524791eef6f0f141cede390f0ae" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlinears__dh_1_1_node" kindref="compound">Node</ref>&lt; Ty &gt;&gt;</type>
+        <definition>using linears_dh::Node&lt; Ty &gt;::pointer_type =  std::shared_ptr&lt;Node&lt;Ty&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>pointer_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="14" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlinears__dh_1_1_node_1ad783ef70540ffbffbaa580d0aca436b2" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlinears__dh_1_1_node" kindref="compound">Node</ref>&lt; Ty &gt;&gt; const</type>
+        <definition>using linears_dh::Node&lt; Ty &gt;::const_pointer_type =  std::shared_ptr&lt;Node&lt;Ty&gt;&gt; const</definition>
+        <argsstring></argsstring>
+        <name>const_pointer_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="15" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="21">
+        <label>linears_dh::sngl_node&lt; Ty &gt;</label>
+        <link refid="classlinears__dh_1_1sngl__node"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>linears_dh::dbl_node&lt; Ty &gt;</label>
+        <link refid="classlinears__dh_1_1dbl__node"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>linears_dh::Node&lt; Ty &gt;</label>
+        <link refid="classlinears__dh_1_1_node"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="12" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" bodystart="12" bodyend="16"/>
+    <listofallmembers>
+      <member refid="classlinears__dh_1_1_node_1ad783ef70540ffbffbaa580d0aca436b2" prot="public" virt="non-virtual"><scope>linears_dh::Node</scope><name>const_pointer_type</name></member>
+      <member refid="classlinears__dh_1_1_node_1a49fcf524791eef6f0f141cede390f0ae" prot="public" virt="non-virtual"><scope>linears_dh::Node</scope><name>pointer_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -6,7 +6,6 @@ Desc:
 //standard libs
 #include <iostream>
 #include <algorithm>
-#include <chrono>
 #include <string>
 #include <list>
 using namespace std;
@@ -21,56 +20,95 @@ using namespace std;
 #if _DEBUG
 #define BOOST_TEST_MAIN
 #define BOOST_TEST_MODULE myTests
+#define PRINT std::cout <<
 #include <boost/test/unit_test.hpp>
-#pragma warning(push)
-#pragma warning(disable : 26812)
-#pragma warning(disable : 26495)
+
 auto r = util::RunTimer();
 
-BOOST_AUTO_TEST_CASE(case1dbl_ll)
+BOOST_AUTO_TEST_CASE(case1_dbl_ll)
 {
+	r.start();
 	linears_dh::Node<int>* node = new linears_dh::dbl_node<int>(10);
 	delete node;
-	cout << __TIMESTAMP__ << " <==> D.HERRERA.V 0881570\n" << endl;
-}//end case1
-
-//BOOST_AUTO_TEST_CASE(case2dbl_ll)
-//{
-//	// test push-back
-//	// confirm test destructor
-//	linears_dh::Double_linked_list<int>::pointer_type lst(
-//		new linears_dh::Double_linked_list<int>);
-//	lst->push_back(51);
-//	lst->push_back(42);
-//	lst->push_back(33);
-//	lst->push_back(24);
-//	lst->push_back(15);
-//}
-
-BOOST_AUTO_TEST_CASE(case3)
-{
-	list<string> a;
-	size_t i = 0;
-	const string TEST_TO[9] = {"the", "quick", "brown","fox","jumped","over","the","lazy","dog"};
-	r.start();
-	util::split("the,quick,brown,fox,jumped,over,the,lazy,dog", a, ',');
-	for_each(a.begin(), a.end(), [&TEST_TO, &i](auto x) {
-		BOOST_CHECK_EQUAL(x, TEST_TO[i]); ++i;
-	});
 	r.finish();
-	cout << "case 3 took -> " << r.elapsed() << " seconds" << endl;
-	
+	cout << __TIMESTAMP__ << " <==> D.HERRERA.V 0881570\n" << endl;
+	//
+	//
+	PRINT r.logging("| case 1: <linears_dh::dbl_node=init-test>") << endl;
+}//end case1
+						  
+BOOST_AUTO_TEST_CASE(case2_dbl_ll)
+{
+	// test push-back
+	// confirm test destructor
+	r.start();
+	auto* lst (new linears_dh::Double_linked_list<int>);
+	lst->push_back(51);
+	lst->push_back(42);
+	lst->push_back(33);
+	lst->push_back(24);
+	lst->push_back(15);
+	delete lst;
+	r.finish();
+	//
+	//
+	PRINT r.logging("| case 2: <linears_dh::push_back=D_l_l-test>") << endl;
 }
 
-BOOST_AUTO_TEST_CASE(case4)
+BOOST_AUTO_TEST_CASE(case3_util)
+{
+	list<string> a;
+	size_t i = 0; 
+	const string test_to[9] = {"the", "quick", "brown","fox","jumped","over","the","lazy","dog"};
+	r.start();
+	util::split("the,quick,brown,fox,jumped,over,the,lazy,dog", a, ',');
+	for_each(a.begin(), a.end(), [&test_to, &i](auto x) {
+		BOOST_CHECK_EQUAL(x, test_to[i]); ++i;
+	});
+	r.finish();
+	//
+	//
+	PRINT r.logging("| case 3: <util::split-test>") << endl;
+}
+
+//TODO: not working correctly
+BOOST_AUTO_TEST_CASE(case4_util)
 {
 	r.start();
 	shared_ptr<util::csv> my_csv{ new util::csv("util_csv_test1.csv") };
 	my_csv->read_csv();
 	cout << my_csv->str();
 	r.finish();
-	cout << "case 4 took -> " << r.elapsed() << " seconds" << endl;
+	//
+	//
+	PRINT r.logging("| case 4: <util::csv=init+methods-test>") << endl;
 }
+
+BOOST_AUTO_TEST_CASE(case5_dbl_ll)
+{
+	r.start();
+	auto* str_lst1(new linears_dh::Double_linked_list<string>);
+	str_lst1->push_back("pos1");
+	str_lst1->push_back("pos2");
+	str_lst1->push_back("pos3");
+	str_lst1->pop_back();
+	delete str_lst1;
+	r.finish();
+	//
+	//
+	PRINT r.logging("| case 5: <linears_dh::pop_back=D_l_l-test>") << endl;
+}
+
+BOOST_AUTO_TEST_CASE(case6_dbl_ll)
+{
+	r.start();
+	r.finish();
+	//
+	//
+	PRINT r.logging("| case 5: <linears_dh::push_front=D_l_l-test>");
+}
+
+
 #endif // DEBUG
 
 //================ RELEASE MODE OPTIMIZATION =================//

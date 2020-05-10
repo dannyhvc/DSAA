@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="double__linked__list_8cpp" kind="file">
+    <compoundname>double_linked_list.cpp</compoundname>
+    <includes refid="double__linked__list_8hpp" local="yes">double_linked_list.hpp</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/memory</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/yvals_core.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/exception</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/yvals.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/type_traits</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/xstddef</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/cstddef</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/stddef.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/xtr1common</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/cstdlib</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/math.h</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/stdlib.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/initializer_list</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/malloc.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/vcruntime_exception.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/iosfwd</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/cstdio</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/stdio.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/cstring</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/string.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/cwchar</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/wchar.h</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/corecrt.h</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/sys/types.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/typeinfo</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/vcruntime_typeinfo.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/xmemory</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/cstdint</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/stdint.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/limits</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/cfloat</includes>
+    <includes local="no">C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/float.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/climits</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/limits.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/new</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/vcruntime_new.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/xatomic.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/xutility</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/utility</includes>
+    <incdepgraph>
+      <node id="13">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/cstdlib</label>
+      </node>
+      <node id="29">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/vcruntime_typeinfo.h</label>
+      </node>
+      <node id="22">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/cstring</label>
+      </node>
+      <node id="38">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/new</label>
+      </node>
+      <node id="41">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/xutility</label>
+      </node>
+      <node id="14">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/math.h</label>
+      </node>
+      <node id="7">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/yvals.h</label>
+      </node>
+      <node id="40">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/xatomic.h</label>
+      </node>
+      <node id="16">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/initializer_list</label>
+      </node>
+      <node id="32">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/stdint.h</label>
+      </node>
+      <node id="8">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/type_traits</label>
+      </node>
+      <node id="17">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/malloc.h</label>
+      </node>
+      <node id="2">
+        <label>../node-mod/node.hpp</label>
+      </node>
+      <node id="28">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/typeinfo</label>
+      </node>
+      <node id="27">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/sys/types.h</label>
+      </node>
+      <node id="20">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/cstdio</label>
+      </node>
+      <node id="31">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/cstdint</label>
+      </node>
+      <node id="4">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/memory</label>
+      </node>
+      <node id="6">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/exception</label>
+      </node>
+      <node id="18">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/vcruntime_exception.h</label>
+      </node>
+      <node id="11">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/stddef.h</label>
+      </node>
+      <node id="24">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/cwchar</label>
+      </node>
+      <node id="39">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/vcruntime_new.h</label>
+      </node>
+      <node id="37">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/limits.h</label>
+      </node>
+      <node id="12">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/xtr1common</label>
+      </node>
+      <node id="35">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/float.h</label>
+      </node>
+      <node id="42">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/utility</label>
+      </node>
+      <node id="23">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/string.h</label>
+      </node>
+      <node id="36">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/climits</label>
+      </node>
+      <node id="0">
+        <label>C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.cpp</label>
+        <link refid="double_linked_list.cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/iosfwd</label>
+      </node>
+      <node id="21">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/stdio.h</label>
+      </node>
+      <node id="30">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/xmemory</label>
+      </node>
+      <node id="34">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/cfloat</label>
+      </node>
+      <node id="33">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/limits</label>
+      </node>
+      <node id="9">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/xstddef</label>
+      </node>
+      <node id="25">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/wchar.h</label>
+      </node>
+      <node id="26">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/corecrt.h</label>
+      </node>
+      <node id="1">
+        <label>double_linked_list.hpp</label>
+        <link refid="double__linked__list_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>algorithm</label>
+      </node>
+      <node id="5">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/yvals_core.h</label>
+      </node>
+      <node id="15">
+        <label>C:/Program Files (x86)/Windows Kits/10/Include/10.0.18362.0/ucrt/stdlib.h</label>
+      </node>
+      <node id="10">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/cstddef</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="double__linked__list_8hpp" kindref="compound">double_linked_list.hpp</ref>&quot;</highlight></codeline>
+    </programlisting>
+    <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.cpp"/>
+  </compounddef>
+</doxygen>

@@ -4,7 +4,8 @@
 #include <algorithm>
 
 /**
- * \brief 
+ * \brief
+ * 
  */
 namespace linears_dh
 {
@@ -34,20 +35,56 @@ namespace linears_dh
 			~iterator() = default;
 
 			// operator overloading
-			iterator& operator=(__const_pointer_t& pnode);
-			//iterator& operator=(const iterator& pnode);
+			iterator& operator=(__const_pointer_t& pnode) {
+				return &iterator(pnode);
+			}
 
-			iterator& operator++ (); //prefix
-			iterator& operator++ (int); //postfix
+			//prefix
+			iterator& operator++ () {
+				if (this->_pointer_node)
+					_pointer_node = _pointer_node->next;
+				return *this;
+			}
 
-			iterator& operator-- (); //postfix
-			iterator& operator-- (int); //postfix
+			//postfix
+			iterator& operator++ (int) {
+				iterator temp = *this;
+				++* this;
+				return &iterator{ temp };
+			}
+			
+			//prefix
+			iterator& operator-- () {
+				if (this->_pointer_node)
+					_pointer_node = _pointer_node->prev;
+				return *this;
+			}
+			
+			//postfix
+			iterator& operator-- (int) {
+				iterator temp = *this;
+				++*this;
+				return &iterator{ temp };
+			}
 
-			iterator& operator+ (const size_t val) noexcept;
-			iterator& operator- (const size_t val) noexcept;
+			iterator& operator+ (const size_t val) noexcept {
+				for (size_t i = 0; i < val; ++i)
+					++this;
+				return *this;
+			}
 
-			constexpr bool operator == (const iterator& rhs);
-			constexpr bool operator != (const iterator& rhs);
+			iterator& operator- (const size_t val) noexcept {
+				for (size_t i = 0; i < val; ++i)
+					--this;
+				return *this;
+			}
+
+			constexpr bool operator == (const iterator& rhs) {
+				return reinterpret_cast<const void*>(this) == reinterpret_cast<const void*>(rhs);
+			}
+			constexpr bool operator != (const iterator& rhs) {
+				return reinterpret_cast<const void*>(this) != reinterpret_cast<const void*>(rhs);
+			}
 		};
 		friend class iterator;
 		
@@ -59,18 +96,111 @@ namespace linears_dh
 #endif
 		
 		// ============== DOUBLE LINKED LIST CLASS SPECIFIERS ============== //
-		Double_linked_list() = default;
-		explicit Double_linked_list(
-			const iterator& beginning, 
-			const iterator& ending
-		);
-		explicit Double_linked_list(const Double_linked_list& lst);
-		~Double_linked_list();
+		Double_linked_list() :
+			_head(nullptr), _tail(nullptr)
+		{
+		}
+
+		/**@author Daniel Herrera
+		 * name: class
+		 * @param1 beginning <dbl_ll::iterator>
+		 * @param2 ending <dbl_ll::iterator>
+		 * ==============Description==============
+		 *		Constructor that takes beginning and ending iterators
+		 *		used to copy another linked list on initialization.
+		 */
+		explicit Double_linked_list(const iterator& beginning, 	const iterator& ending)
+		{
+			std::for_each(beginning, ending, [this](_Ty val)	{
+				this->push_back(val);
+			});
+		}
+
+		/**@author Daniel Herrera
+		 * 
+		 */
+		explicit Double_linked_list(const Double_linked_list& lst)
+		{
+			__pointer_t current = lst._head;
+			__pointer_t end = nullptr;
+			std::for_each(lst.begin(), lst.end(),
+				[this](_Ty val) mutable -> auto	{
+				this->push_back(val);
+			});
+		}//end cpy_init
+
+		/**@author Daniel Herrera
+		 * name: ~class
+		 * ==============Description==============
+		 *		Destructor function that loop through every node in
+		 *		the linked list and reduces the size numerically as well as
+		 *		unlinking the node and deleting them using the dbl_node destructor.
+		 */
+		~Double_linked_list()
+		{
+			while (!is_empty())	{
+				const __pointer_t temp = _head;
+				_head = _head->next;
+				delete temp;
+				--this->_size;
+			}
+		}//end destructor
 
 		// stretcher methods
-		constexpr size_t size() const { return {_size}; }
-		constexpr bool is_empty() const { return {_size == 0}; }
-		void push_back(_Ty val);
+		constexpr size_t size() const { return _size; }
+		constexpr bool is_empty() const { return _size == 0; }
+
+		/**@author Daniel Herrera
+		 * name: push_back
+		 * @param val, const qualified template typed
+		 * @returns void
+		 * ==============Description==============
+		 *		Object method that links a new node on to the back (i.e. tail)
+		 *		of the double linked list.
+		 */
+		void push_back(const _Ty& val)
+		{
+			//TODO
+			auto* node = new dbl_node<_Ty>(val);
+			node->next = nullptr;
+			node->prev = _tail;
+			if (is_empty())
+				_head = node;
+			else
+				_tail->next = node;
+			_tail = node;
+			++_size; // new node = +1 to size
+		}
+
+		/**@author Daniel Herrera
+		 * name: pop_back
+		 * @param: val, const qualified template typed
+		 * @returns _Ty
+		 * ==============Description==============
+		 *		Object method unlinks and deletes the last node on
+		 *		the chain and returns the data value of the unlinked node.
+		 */
+		_Ty pop_back()
+		{
+			if (is_empty())
+				return _Ty();
+			auto* temp(_tail);
+			_Ty val(temp->data);
+			this->_tail = _tail->prev;
+			delete temp;
+			--_size;
+			return val;
+		}
+
+		/**@author Daniel Herrera
+		 * name: push_front
+		 * 
+		 */
+		void push_front(const _Ty& val);
+		_Ty pop_front();
+		void insert(const unsigned pos, const _Ty& rval); //inserts and replaces at position
+		void insert_before();
+		void insert_after();
 		
 
 	private:
@@ -80,140 +210,6 @@ namespace linears_dh
 		unsigned	_size { 0 };
 	};
 	
-} 
-
-
-namespace linears_dh
-{
-#if 1
-	template <typename _Ty>
-	constexpr bool Double_linked_list<_Ty>::iterator::operator==(const iterator& rhs) {
-		return reinterpret_cast<const void*>(this) == reinterpret_cast<const void*>(rhs);
-	}
-
-	template <typename _Ty>
-	constexpr bool Double_linked_list<_Ty>::iterator::operator!=(const Double_linked_list::iterator& rhs) {
-		return reinterpret_cast<const void*>(this) != reinterpret_cast<const void*>(rhs);
-	}
-
-	template <typename _Ty>
-	auto Double_linked_list<_Ty>::iterator::operator=(
-		     __const_pointer_t& pnode) ->iterator& {
-		return &iterator{ pnode };
-	}
-
-	template <typename _Ty>
-	typename Double_linked_list<_Ty>::iterator& Double_linked_list<_Ty>::iterator::operator++()
-	{
-		if (this->_pointer_node)
-			_pointer_node = _pointer_node->next;
-		return *this;
-	}
-
-	template <typename _Ty>
-	typename Double_linked_list<_Ty>::iterator& 
-		Double_linked_list<_Ty>::iterator::operator++(int)
-	{
-		iterator temp = *this;
-		++* this;
-		return &iterator{ temp };
-	}
-
-	template <typename _Ty>
-	typename Double_linked_list<_Ty>::iterator& 
-		Double_linked_list<_Ty>::iterator::operator--()
-	{
-		if (this->_pointer_node)
-			_pointer_node = _pointer_node->prev;
-		return *this;
-	}
-
-	template <typename _Ty>
-	typename Double_linked_list<_Ty>::iterator& 
-		Double_linked_list<_Ty>::iterator::operator--(int)
-	{
-		iterator temp = *this;
-		++* this;
-		return &iterator{ temp };
-	}
-
-	template <typename _Ty>
-	typename Double_linked_list<_Ty>::iterator& 
-		Double_linked_list<_Ty>::iterator::operator+(const size_t val) noexcept {
-		for (size_t i = 0; i < val; ++i)
-			++this;
-		return *this;
-	}
-
-	template <typename _Ty>
-	typename Double_linked_list<_Ty>::iterator& 
-		Double_linked_list<_Ty>::iterator::operator-(const size_t val) noexcept {
-		for (size_t i = 0; i < val; ++i)
-			--this;
-		return *this;
-	}
-
-#endif
-	
-#if 1
-	template <typename _Ty>
-	Double_linked_list<_Ty>::Double_linked_list(
-		const iterator& beginning, const iterator& ending)
-	{
-		std::for_each(beginning, ending, [this]()
-		{
-			
-		});
-	}
-
-	template <typename _Ty>
-	Double_linked_list<_Ty>::Double_linked_list(const Double_linked_list& lst)
-	{
-		__pointer_t current = lst._head;
-		__pointer_t end = nullptr;
-		std::for_each(lst.begin(), lst.end(), 
-		[&lst, &current, &end, this]() mutable -> auto
-		{
-			__pointer_t n = new dbl_node<_Ty>;
-			n->data = current->data;
-			if (!_head) {
-				_head = n;
-				end = _head;
-			}
-			else {
-				end->next = n;
-				end = n;
-			}
-			current = current->next;
-		});
-	}// copy constructor 
-
-	template <typename _Ty>
-	Double_linked_list<_Ty>::~Double_linked_list()
-	{
-		while (_head != _tail)
-		{
-			const __pointer_t temp = _head;
-			_head = _head->next;
-			delete temp;
-		}
-	}//end destructor
-	template <typename _Ty>
-	void Double_linked_list<_Ty>::push_back(_Ty val)
-	{
-		//TODO
-		__pointer_t node = new dbl_node<_Ty>(val);
-		node->next = nullptr;
-		node->prev = _tail;
-		if (is_empty())
-			_head = node;
-		else
-			_tail->next = node;
-		_tail = node;
-		++_size; // new node = +1 to size
-	}
-#endif
-
 	// global functions
 	namespace static_dlist_dh
 	{
@@ -237,4 +233,4 @@ namespace linears_dh
 			return dll->end();
 		}
 	}
-}
+} 

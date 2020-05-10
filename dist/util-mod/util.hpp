@@ -5,10 +5,13 @@
 #include <vector>
 #include <memory>
 #include <chrono>
-#include <iostream>
+#include <iomanip>
 
 namespace util
 {
+	/**
+	 * \params 
+	 */
 	template <typename Container>
 	constexpr void split(const std::string& str, Container& container, const char delims)
 	{
@@ -48,7 +51,7 @@ namespace util
 		using time_unit = std::chrono::steady_clock::time_point;
 		time_unit start_time_point_;
 		time_unit end_time_point_;
-		const double CONVERT_2SECONDS = 1'000'000'000;
+		const double CONVERT_2MSECONDS = 1'000'000;
 		
 	public:
 		explicit RunTimer() = default;
@@ -73,9 +76,26 @@ namespace util
 			const auto t1 = std::chrono::duration_cast<std::chrono::nanoseconds>(
 				end_time_point_ - start_time_point_
 			);
-			return t1.count() / CONVERT_2SECONDS;
+			return t1.count() / CONVERT_2MSECONDS;
+		}
+
+		/*
+		 * logs the amount of time a specific task took to complete in milliseconds
+		 */
+		auto logging(const std::string& s="") const {
+			/**
+			 * logging conventions:
+			 *		| "name": 
+			 *		<namespace::("test conjugate"_1+"test conjugate"_2="class abreviation")-test>
+			 *
+			 *	if global method:
+			 *		<namespace::"method(s) name"-test>
+			 *	elif multi paradigm test:
+			 *		<"test culture brief"::"pass/fail expected"-test>
+			 */
+			std::ostringstream oss;
+			oss << std::setprecision(5) << std::fixed << elapsed() <<"ms " << s;
+			return oss.str();
 		}
 	};
-
-	
 }

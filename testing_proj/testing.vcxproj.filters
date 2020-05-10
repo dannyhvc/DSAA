@@ -23,5 +23,6 @@
     <None Include="util_csv_test1.csv">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

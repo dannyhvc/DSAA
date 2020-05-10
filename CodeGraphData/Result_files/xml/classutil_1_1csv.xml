@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classutil_1_1csv" kind="class" prot="public">
+    <compoundname>util::csv</compoundname>
+    <includes refid="util_8hpp" local="no">util.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classutil_1_1csv_1a81f5b083ffba0bbd776f1f834dee4f38" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string util::csv::fname_cs_</definition>
+        <argsstring></argsstring>
+        <name>fname_cs_</name>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/util-mod/util.hpp" line="30" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/util-mod/util.hpp" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classutil_1_1csv_1a0653480eb0eae9c4d28d568a78afdc8e" compoundref="util_8cpp" startline="36" endline="42">read_csv</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classutil_1_1csv_1ae609fb2e100527cf563af7b97e2c3331" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; std::vector&lt; std::vector&lt; std::string &gt; &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;std::vector&lt;std::vector&lt;std::string&gt; &gt; &gt; util::csv::solution_</definition>
+        <argsstring></argsstring>
+        <name>solution_</name>
+        <initializer>{ 
+			new std::vector&lt;std::vector&lt;std::string&gt;&gt;
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/util-mod/util.hpp" line="31" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/util-mod/util.hpp" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classutil_1_1csv_1ae91d47a184d91977aa8bcce0d5cf06a6" compoundref="util_8cpp" startline="52" endline="61">parse</referencedby>
+        <referencedby refid="classutil_1_1csv_1a0653480eb0eae9c4d28d568a78afdc8e" compoundref="util_8cpp" startline="36" endline="42">read_csv</referencedby>
+        <referencedby refid="classutil_1_1csv_1a9a1e8aa43aa2f2281d9976754c653216" compoundref="util_8cpp" startline="68" endline="80">str</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classutil_1_1csv_1a7bbfe66c7dfb4b7b2f538d8cffc37289" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>util::csv::csv</definition>
+        <argsstring>(std::string fn)</argsstring>
+        <name>csv</name>
+        <param>
+          <type>std::string</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/util-mod/util.hpp" line="36" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/util-mod/util.hpp" bodystart="36" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classutil_1_1csv_1a2ef8657f1a018d6a8d6d864c35c61b03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>util::csv::~csv</definition>
+        <argsstring>()=default</argsstring>
+        <name>~csv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/util-mod/util.hpp" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classutil_1_1csv_1a0653480eb0eae9c4d28d568a78afdc8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; std::string &gt; &gt; util::csv::read_csv</definition>
+        <argsstring>()</argsstring>
+        <name>read_csv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>method used to read and parse the csv file. <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector of vector, string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/util-mod/util.hpp" line="40" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/util-mod/util.cpp" bodystart="36" bodyend="42"/>
+        <references refid="classutil_1_1csv_1a81f5b083ffba0bbd776f1f834dee4f38" compoundref="util_8hpp" startline="30">fname_cs_</references>
+        <references refid="classutil_1_1csv_1ae91d47a184d91977aa8bcce0d5cf06a6" compoundref="util_8cpp" startline="52" endline="61">parse</references>
+        <references refid="classutil_1_1csv_1ae609fb2e100527cf563af7b97e2c3331" compoundref="util_8hpp" startline="31">solution_</references>
+      </memberdef>
+      <memberdef kind="function" id="classutil_1_1csv_1ae91d47a184d91977aa8bcce0d5cf06a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; std::string &gt; &gt; util::csv::parse</definition>
+        <argsstring>(std::istream &amp;bis)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>bis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>parse the csv file. each line from the csv corresponds to an index on the first vector, and each element in the csv corresponds to a element in the second vector.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector of vector, string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/util-mod/util.hpp" line="41" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/util-mod/util.cpp" bodystart="52" bodyend="61"/>
+        <references refid="classutil_1_1csv_1ae609fb2e100527cf563af7b97e2c3331" compoundref="util_8hpp" startline="31">solution_</references>
+        <references refid="namespaceutil_1a6dddadf54219a5e7d7fcbf0afa8e53c5" compoundref="util_8hpp" startline="13" endline="26">util::split</references>
+        <referencedby refid="classutil_1_1csv_1a0653480eb0eae9c4d28d568a78afdc8e" compoundref="util_8cpp" startline="36" endline="42">read_csv</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classutil_1_1csv_1a9a1e8aa43aa2f2281d9976754c653216" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string util::csv::str</definition>
+        <argsstring>() const </argsstring>
+        <name>str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>to string method. <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector of vector, string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/util-mod/util.hpp" line="42" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/util-mod/util.cpp" bodystart="68" bodyend="80"/>
+        <references refid="classutil_1_1csv_1ae609fb2e100527cf563af7b97e2c3331" compoundref="util_8hpp" startline="31">solution_</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>util::csv</label>
+        <link refid="classutil_1_1csv"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>fname_cs_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/#GITHUB/Play-Ground2/compsci/dist/util-mod/util.hpp" line="29" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/util-mod/util.hpp" bodystart="28" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classutil_1_1csv_1a7bbfe66c7dfb4b7b2f538d8cffc37289" prot="public" virt="non-virtual"><scope>util::csv</scope><name>csv</name></member>
+      <member refid="classutil_1_1csv_1a81f5b083ffba0bbd776f1f834dee4f38" prot="private" virt="non-virtual"><scope>util::csv</scope><name>fname_cs_</name></member>
+      <member refid="classutil_1_1csv_1ae91d47a184d91977aa8bcce0d5cf06a6" prot="public" virt="non-virtual"><scope>util::csv</scope><name>parse</name></member>
+      <member refid="classutil_1_1csv_1a0653480eb0eae9c4d28d568a78afdc8e" prot="public" virt="non-virtual"><scope>util::csv</scope><name>read_csv</name></member>
+      <member refid="classutil_1_1csv_1ae609fb2e100527cf563af7b97e2c3331" prot="private" virt="non-virtual"><scope>util::csv</scope><name>solution_</name></member>
+      <member refid="classutil_1_1csv_1a9a1e8aa43aa2f2281d9976754c653216" prot="public" virt="non-virtual"><scope>util::csv</scope><name>str</name></member>
+      <member refid="classutil_1_1csv_1a2ef8657f1a018d6a8d6d864c35c61b03" prot="public" virt="non-virtual"><scope>util::csv</scope><name>~csv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

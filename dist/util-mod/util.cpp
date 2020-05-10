@@ -52,7 +52,6 @@ namespace util
 	std::vector<std::vector<std::string>> csv::parse(std::istream& bis)
 	{
 		auto tmp = std::string();
-		std::istream::_Iter a;
 		const auto len = std::count(std::istream::_Iter(bis),
 			std::istream::_Iter(), '\n');
 		
