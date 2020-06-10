@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classlinears__dh_1_1dbl__node" kind="class" prot="public">
+    <compoundname>linears_dh::dbl_node</compoundname>
+    <basecompoundref refid="classlinears__dh_1_1_node" prot="public" virt="non-virtual">linears_dh::Node&lt; Ty &gt;</basecompoundref>
+    <includes refid="node_8hpp" local="no">node.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Ty</declname>
+        <defname>Ty</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classlinears__dh_1_1dbl__node_1a312fcd1e68ddf3582f658a3bcca91dad" prot="private" static="no">
+        <type><ref refid="classlinears__dh_1_1dbl__node" kindref="compound">dbl_node</ref>&lt; Ty &gt; *</type>
+        <definition>using linears_dh::dbl_node&lt; Ty &gt;::__pointer_t =  dbl_node&lt;Ty&gt;*</definition>
+        <argsstring></argsstring>
+        <name>__pointer_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="25" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlinears__dh_1_1dbl__node_1a8ad1264e53aca85fd43e40013207fe74" prot="private" static="no">
+        <type>const <ref refid="classlinears__dh_1_1dbl__node" kindref="compound">dbl_node</ref>&lt; Ty &gt; *</type>
+        <definition>using linears_dh::dbl_node&lt; Ty &gt;::__const_pointer_t =  const dbl_node&lt;Ty&gt;*</definition>
+        <argsstring></argsstring>
+        <name>__const_pointer_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="26" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlinears__dh_1_1dbl__node_1a152c5cc45a942665ae3a9860c7aaae94" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlinears__dh_1_1dbl__node" kindref="compound">dbl_node</ref>&lt; Ty &gt;&gt;</type>
+        <definition>using linears_dh::dbl_node&lt; Ty &gt;::pointer_type =  std::shared_ptr&lt;dbl_node&lt;Ty&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>pointer_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="29" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlinears__dh_1_1dbl__node_1ad7d20d9476a366ca858e7aa3aa3bb4b2" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlinears__dh_1_1dbl__node" kindref="compound">dbl_node</ref>&lt; Ty &gt;&gt; const</type>
+        <definition>using linears_dh::dbl_node&lt; Ty &gt;::const_pointer_type =  std::shared_ptr&lt;dbl_node&lt;Ty&gt;&gt; const</definition>
+        <argsstring></argsstring>
+        <name>const_pointer_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="30" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlinears__dh_1_1dbl__node_1a1d1c9cc74bfd5f10a060936f88c41230" prot="public" static="no" mutable="no">
+        <type>Ty</type>
+        <definition>Ty linears_dh::dbl_node&lt; Ty &gt;::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="53" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlinears__dh_1_1dbl__node_1ac87a0769eaf7e2652e3f26aa6932fff0" prot="public" static="no" mutable="no">
+        <type><ref refid="classlinears__dh_1_1dbl__node_1a312fcd1e68ddf3582f658a3bcca91dad" kindref="member">__pointer_t</ref></type>
+        <definition>__pointer_t linears_dh::dbl_node&lt; Ty &gt;::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="54" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classlinears__dh_1_1_double__linked__list_1ab5a597dd97bcf90e65429db479e1be1d" compoundref="double__linked__list_8hpp" startline="168" endline="178">linears_dh::Double_linked_list&lt; _Ty &gt;::push_back</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classlinears__dh_1_1dbl__node_1a6165f380354bacf5bbac0f162a176cbe" prot="public" static="no" mutable="no">
+        <type><ref refid="classlinears__dh_1_1dbl__node_1a312fcd1e68ddf3582f658a3bcca91dad" kindref="member">__pointer_t</ref></type>
+        <definition>__pointer_t linears_dh::dbl_node&lt; Ty &gt;::prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="55" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classlinears__dh_1_1_double__linked__list_1a66a5d4204935f698e0167f97d92b1c86" compoundref="double__linked__list_8hpp" startline="206" endline="216">linears_dh::Double_linked_list&lt; _Ty &gt;::push_front</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlinears__dh_1_1dbl__node_1af86a6d67d76616da9950fbd0c5549b43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>linears_dh::dbl_node&lt; Ty &gt;::dbl_node</definition>
+        <argsstring>()=default</argsstring>
+        <name>dbl_node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlinears__dh_1_1dbl__node_1aed509bfc50eb6a31985e3a7eed0047c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>linears_dh::dbl_node&lt; Ty &gt;::dbl_node</definition>
+        <argsstring>(Ty val, const __pointer_t &amp;n=nullptr, const __pointer_t &amp;p=nullptr)</argsstring>
+        <name>dbl_node</name>
+        <param>
+          <type>Ty</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlinears__dh_1_1dbl__node_1a312fcd1e68ddf3582f658a3bcca91dad" kindref="member">__pointer_t</ref> &amp;</type>
+          <declname>n</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>const <ref refid="classlinears__dh_1_1dbl__node_1a312fcd1e68ddf3582f658a3bcca91dad" kindref="member">__pointer_t</ref> &amp;</type>
+          <declname>p</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="34" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" bodystart="34" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classlinears__dh_1_1dbl__node_1a6f1d945876801f321d6654f8669b3612" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>linears_dh::dbl_node&lt; Ty &gt;::dbl_node</definition>
+        <argsstring>(dbl_node const &amp;dn) noexcept</argsstring>
+        <name>dbl_node</name>
+        <param>
+          <type><ref refid="classlinears__dh_1_1dbl__node" kindref="compound">dbl_node</ref> const &amp;</type>
+          <declname>dn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="43" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classlinears__dh_1_1dbl__node_1a0c299be5214c5689b847877f85ebfe53" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>linears_dh::dbl_node&lt; Ty &gt;::dbl_node</definition>
+        <argsstring>(__const_pointer_t &amp;pdn) noexcept</argsstring>
+        <name>dbl_node</name>
+        <param>
+          <type><ref refid="classlinears__dh_1_1dbl__node_1a8ad1264e53aca85fd43e40013207fe74" kindref="member">__const_pointer_t</ref> &amp;</type>
+          <declname>pdn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="47" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classlinears__dh_1_1dbl__node_1a459d640f3db82fca217c05bc8d0c3ee3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>linears_dh::dbl_node&lt; Ty &gt;::~dbl_node</definition>
+        <argsstring>()=default</argsstring>
+        <name>~dbl_node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>linears_dh::dbl_node&lt; Ty &gt;</label>
+        <link refid="classlinears__dh_1_1dbl__node"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>linears_dh::Node&lt; Ty &gt;</label>
+        <link refid="classlinears__dh_1_1_node"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>Ty</label>
+      </node>
+      <node id="6">
+        <label>linears_dh::dbl_node&lt; Ty &gt;</label>
+        <link refid="classlinears__dh_1_1dbl__node"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>linears_dh::Node&lt; Ty &gt;</label>
+        <link refid="classlinears__dh_1_1_node"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="23" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" bodystart="21" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classlinears__dh_1_1dbl__node_1a8ad1264e53aca85fd43e40013207fe74" prot="private" virt="non-virtual"><scope>linears_dh::dbl_node</scope><name>__const_pointer_t</name></member>
+      <member refid="classlinears__dh_1_1dbl__node_1a312fcd1e68ddf3582f658a3bcca91dad" prot="private" virt="non-virtual"><scope>linears_dh::dbl_node</scope><name>__pointer_t</name></member>
+      <member refid="classlinears__dh_1_1dbl__node_1ad7d20d9476a366ca858e7aa3aa3bb4b2" prot="public" virt="non-virtual"><scope>linears_dh::dbl_node</scope><name>const_pointer_type</name></member>
+      <member refid="classlinears__dh_1_1dbl__node_1a1d1c9cc74bfd5f10a060936f88c41230" prot="public" virt="non-virtual"><scope>linears_dh::dbl_node</scope><name>data</name></member>
+      <member refid="classlinears__dh_1_1dbl__node_1af86a6d67d76616da9950fbd0c5549b43" prot="public" virt="non-virtual"><scope>linears_dh::dbl_node</scope><name>dbl_node</name></member>
+      <member refid="classlinears__dh_1_1dbl__node_1aed509bfc50eb6a31985e3a7eed0047c1" prot="public" virt="non-virtual"><scope>linears_dh::dbl_node</scope><name>dbl_node</name></member>
+      <member refid="classlinears__dh_1_1dbl__node_1a6f1d945876801f321d6654f8669b3612" prot="public" virt="non-virtual"><scope>linears_dh::dbl_node</scope><name>dbl_node</name></member>
+      <member refid="classlinears__dh_1_1dbl__node_1a0c299be5214c5689b847877f85ebfe53" prot="public" virt="non-virtual"><scope>linears_dh::dbl_node</scope><name>dbl_node</name></member>
+      <member refid="classlinears__dh_1_1dbl__node_1ac87a0769eaf7e2652e3f26aa6932fff0" prot="public" virt="non-virtual"><scope>linears_dh::dbl_node</scope><name>next</name></member>
+      <member refid="classlinears__dh_1_1dbl__node_1a152c5cc45a942665ae3a9860c7aaae94" prot="public" virt="non-virtual"><scope>linears_dh::dbl_node</scope><name>pointer_type</name></member>
+      <member refid="classlinears__dh_1_1dbl__node_1a6165f380354bacf5bbac0f162a176cbe" prot="public" virt="non-virtual"><scope>linears_dh::dbl_node</scope><name>prev</name></member>
+      <member refid="classlinears__dh_1_1dbl__node_1a459d640f3db82fca217c05bc8d0c3ee3" prot="public" virt="non-virtual"><scope>linears_dh::dbl_node</scope><name>~dbl_node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

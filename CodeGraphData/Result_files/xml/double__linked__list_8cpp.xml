@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="double__linked__list_8cpp" kind="file">
+    <compoundname>double_linked_list.cpp</compoundname>
+    <includes refid="double__linked__list_8hpp" local="yes">double_linked_list.hpp</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/memory</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/utility</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/yvals_core.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/xmemory</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/memory</label>
+      </node>
+      <node id="5">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/utility</label>
+      </node>
+      <node id="6">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/yvals_core.h</label>
+      </node>
+      <node id="2">
+        <label>../node-mod/node.hpp</label>
+      </node>
+      <node id="7">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/xmemory</label>
+      </node>
+      <node id="0">
+        <label>C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.cpp</label>
+        <link refid="double_linked_list.cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>double_linked_list.hpp</label>
+        <link refid="double__linked__list_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="double__linked__list_8hpp" kindref="compound">double_linked_list.hpp</ref>&quot;</highlight></codeline>
+    </programlisting>
+    <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.cpp"/>
+  </compounddef>
+</doxygen>

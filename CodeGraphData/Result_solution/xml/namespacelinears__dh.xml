@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacelinears__dh" kind="namespace">
+    <compoundname>linears_dh</compoundname>
+    <innerclass refid="classlinears__dh_1_1_node" prot="public">linears_dh::Node</innerclass>
+    <innerclass refid="classlinears__dh_1_1dbl__node" prot="public">linears_dh::dbl_node</innerclass>
+    <innerclass refid="classlinears__dh_1_1sngl__node" prot="public">linears_dh::sngl_node</innerclass>
+    <innerclass refid="classlinears__dh_1_1_double__linked__list" prot="public">linears_dh::Double_linked_list</innerclass>
+    <innernamespace refid="namespacelinears__dh_1_1static__dlist__dh">linears_dh::static_dlist_dh</innernamespace>
+    <briefdescription>
+<para>takes the class name and </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <location file="C:/#GITHUB/Play-Ground2/compsci/dist/node-mod/node.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

@@ -27,7 +27,10 @@ namespace util
 		}//end for
 		if (ss) container.push_back(ss.str());
 	}//end split
-
+	
+	/**@author Daniel Herrera
+	 * csv Class, standard layout class for reading and wriing to a csv.
+	 */
 	class csv
 	{
 		std::string fname_cs_ { 0 };
@@ -45,6 +48,9 @@ namespace util
 		std::string str() const;
 	};
 
+	/**@author Daniel Herrera
+	 * RunTimere Class
+	 */
 	class RunTimer
 	{
 	private:
@@ -53,7 +59,7 @@ namespace util
 		time_unit end_time_point_;
 		const double CONVERT_2MSECONDS = 1'000'000;
 		
-	public:
+	public: //todo: fix the restart functionality
 		explicit RunTimer() = default;
 		~RunTimer() = default;
 
@@ -69,9 +75,7 @@ namespace util
 			return end_time_point_;
 		}
 
-		/*
-		 * return time elapsed in seconds
-		 */
+		/* return time elapsed in seconds */
 		constexpr auto elapsed() const {
 			const auto t1 = std::chrono::duration_cast<std::chrono::nanoseconds>(
 				end_time_point_ - start_time_point_
@@ -79,9 +83,7 @@ namespace util
 			return t1.count() / CONVERT_2MSECONDS;
 		}
 
-		/*
-		 * logs the amount of time a specific task took to complete in milliseconds
-		 */
+		/* logs the amount of time a specific task took to complete in milliseconds */
 		auto logging(const std::string& s="") const {
 			/**
 			 * logging conventions:

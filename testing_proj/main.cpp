@@ -42,13 +42,14 @@ BOOST_AUTO_TEST_CASE(case2_dbl_ll)
 	// test push-back
 	// confirm test destructor
 	r.start();
-	auto* lst (new linears_dh::Double_linked_list<int>);
-	lst->push_back(51);
-	lst->push_back(42);
-	lst->push_back(33);
-	lst->push_back(24);
-	lst->push_back(15);
-	delete lst;
+	auto* lst1 (new linears_dh::Double_linked_list<int>);	
+	lst1->push_back(51);
+	lst1->push_back(42);
+	lst1->push_back(33);
+	lst1->push_back(24);
+	lst1->push_back(15);
+	
+	delete lst1;
 	r.finish();
 	//
 	//
@@ -71,7 +72,7 @@ BOOST_AUTO_TEST_CASE(case3_util)
 	PRINT r.logging("| case 3: <util::split-test>") << endl;
 }
 
-//TODO: not working correctly
+//TODO: not reading file correctly
 BOOST_AUTO_TEST_CASE(case4_util)
 {
 	r.start();
@@ -110,16 +111,48 @@ BOOST_AUTO_TEST_CASE(case6_dbl_ll)
 	r.finish();
 	//
 	//
-	PRINT r.logging("| case 6: <linears_dh::push_front=D_l_l-test>");
+	PRINT r.logging("| case 6: <linears_dh::push_front=D_l_l-test>") << endl;
+}
+
+BOOST_AUTO_TEST_CASE(case7_dbl_ll__iter)
+{
+	//double linked list iterator test
+	r.start();
+	auto* linked_list(new linears_dh::Double_linked_list<string>);
+	string a[] = { "D","A","N","I","E","L" }; unsigned oioioi = 0;
+	linked_list->push_back("D");
+	linked_list->push_back("A");
+	linked_list->push_back("N");
+	linked_list->push_back("I");
+	linked_list->push_back("E");
+	linked_list->push_back("L");
+	
+	for (auto i = linked_list->begin(); 
+		i.operator!=(linked_list->end()); 
+		++i) {
+		BOOST_CHECK_EQUAL(*i, a[oioioi]); ++oioioi;
+	}
+	delete linked_list;
+	r.finish();
+	//
+	//
+	PRINT r.logging("| case 7: <linears_dh::iter=D_l_l-test>") << endl;
 }
 
 BOOST_AUTO_TEST_CASE(case7_dbl_ll)
 {
+	cout << endl;
 	r.start();
+	auto* pop_front_list_ut (new linears_dh::Double_linked_list<string>);
+	for (auto i = 64; i < 97; ++i)
+		pop_front_list_ut->push_back(to_string(i));
+	r.restart();
+	PRINT r.logging("| case 8: <linears_dh::pop_front-test>") << endl;
+	delete pop_front_list_ut;
 	r.finish();
 	//
 	//
-	PRINT r.logging("| case 7: <linears_dh::insert=D_l_l-test>");
+	PRINT r.logging("| case 8: <linears_dh::pop_front-test>");
 }
 
 

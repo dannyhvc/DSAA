@@ -1,0 +1,1186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="main_8cpp" kind="file">
+    <compoundname>main.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/yvals_core.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/istream</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">string</includes>
+    <includes local="no">list</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/xmemory</includes>
+    <includes refid="double__linked__list_8hpp" local="no">dist/double-linked-list-mod/double_linked_list.hpp</includes>
+    <includes local="no">dist/node-mod/node.hpp</includes>
+    <includes refid="util_8hpp" local="no">dist/util-mod/util.hpp</includes>
+    <includes local="no">boost/test/unit_test.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/test_tools.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/config.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/config/detail/select_compiler_config.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/config/detail/select_platform_config.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/config/detail/suffix.hpp</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/limits.h</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/config/helper_macros.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/detail/config.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/detail/workaround.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/config/workaround.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/config/config.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/tools/context.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/utils/lazy_ostream.hpp</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/iosfwd</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/detail/suppress_warnings.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/detail/enable_warnings.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/detail/pp_variadic.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/control/iif.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/comparison/equal.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/comparison/not_equal.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/cat.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/logical/compl.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/variadic/size.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/repetition/enum_params.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/punctuation/comma_if.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/control/if.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/logical/bool.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/facilities/empty.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/punctuation/comma.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/repetition/repeat.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/debug/error.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/detail/auto_rec.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/tuple/eat.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/repetition/enum_binary_params.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/tuple/elem.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/facilities/expand.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/facilities/overload.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/tuple/rem.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/tuple/detail/is_single_return.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/variadic/elem.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/repetition/repeat_from_to.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/arithmetic/add.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/arithmetic/dec.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/arithmetic/inc.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/control/while.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/list/fold_left.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/list/detail/fold_left.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/control/expr_iif.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/list/adt.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/detail/is_binary.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/detail/check.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/list/fold_right.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/list/detail/fold_right.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/list/reverse.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/logical/bitand.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/control/detail/while.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/arithmetic/sub.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/variadic/to_seq.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/tuple/to_seq.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/tuple/size.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/seq/for_each_i.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/repetition/for.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/repetition/detail/for.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/seq/seq.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/seq/elem.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/seq/size.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/seq/detail/is_empty.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/seq/for_each.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/seq/enum.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/tools/old/interface.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/preprocessor/seq/to_tuple.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/core/ignore_unused.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/tools/old/impl.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/unit_test_log.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/tree/observer.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/detail/fwd_decl.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/detail/global_typedef.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/utils/basic_cstring/basic_cstring.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/utils/basic_cstring/basic_cstring_fwd.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/utils/basic_cstring/bcs_char_traits.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/add_const.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/detail/config.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/version.hpp</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/string</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/cstddef</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/remove_cv.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/detail/log_level.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/utils/wrap_stringstream.hpp</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/sstream</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/tools/assertion_result.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/test/utils/class_properties.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/call_traits.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/detail/call_traits.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/is_arithmetic.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/is_integral.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/integral_constant.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/is_floating_point.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/is_enum.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/intrinsics.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/add_reference.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/is_reference.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/is_lvalue_reference.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/is_rvalue_reference.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/is_convertible.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/is_complete.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/declval.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/add_rvalue_reference.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/is_void.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/remove_reference.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/is_function.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/detail/is_function_cxx_11.hpp</includes>
+    <includes local="no">C:/BOOST/boost_1_71_0/boost/type_traits/detail/yes_no_type.hpp</includes>
+    <incdepgraph>
+      <node id="112">
+        <label>list</label>
+      </node>
+      <node id="217">
+        <label>C:/BOOST/boost_1_71_0/boost/detail/call_traits.hpp</label>
+      </node>
+      <node id="218">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/is_arithmetic.hpp</label>
+      </node>
+      <node id="123">
+        <label>iomanip</label>
+      </node>
+      <node id="219">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/is_integral.hpp</label>
+      </node>
+      <node id="109">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/istream</label>
+      </node>
+      <node id="198">
+        <label>C:/BOOST/boost_1_71_0/boost/test/unit_test_log.hpp</label>
+      </node>
+      <node id="131">
+        <label>C:/BOOST/boost_1_71_0/boost/config/helper_macros.hpp</label>
+      </node>
+      <node id="125">
+        <label>C:/BOOST/boost_1_71_0/boost/test/test_tools.hpp</label>
+      </node>
+      <node id="156">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/detail/auto_rec.hpp</label>
+      </node>
+      <node id="117">
+        <label>dist/util-mod/util.hpp</label>
+        <link refid="util_8hpp"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/detail/yes_no_type.hpp</label>
+      </node>
+      <node id="188">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/seq/seq.hpp</label>
+      </node>
+      <node id="223">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/intrinsics.hpp</label>
+      </node>
+      <node id="136">
+        <label>C:/BOOST/boost_1_71_0/boost/test/tools/context.hpp</label>
+      </node>
+      <node id="159">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="214">
+        <label>C:/BOOST/boost_1_71_0/boost/test/tools/assertion_result.hpp</label>
+      </node>
+      <node id="124">
+        <label>boost/test/unit_test.hpp</label>
+      </node>
+      <node id="211">
+        <label>C:/BOOST/boost_1_71_0/boost/test/detail/log_level.hpp</label>
+      </node>
+      <node id="172">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/control/expr_iif.hpp</label>
+      </node>
+      <node id="226">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/is_lvalue_reference.hpp</label>
+      </node>
+      <node id="138">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/iosfwd</label>
+      </node>
+      <node id="164">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/variadic/elem.hpp</label>
+      </node>
+      <node id="221">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/is_floating_point.hpp</label>
+      </node>
+      <node id="130">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/limits.h</label>
+      </node>
+      <node id="140">
+        <label>C:/BOOST/boost_1_71_0/boost/test/detail/enable_warnings.hpp</label>
+      </node>
+      <node id="108">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/yvals_core.h</label>
+      </node>
+      <node id="200">
+        <label>C:/BOOST/boost_1_71_0/boost/test/detail/fwd_decl.hpp</label>
+      </node>
+      <node id="234">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/is_function.hpp</label>
+      </node>
+      <node id="182">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/variadic/to_seq.hpp</label>
+      </node>
+      <node id="158">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/repetition/enum_binary_params.hpp</label>
+      </node>
+      <node id="137">
+        <label>C:/BOOST/boost_1_71_0/boost/test/utils/lazy_ostream.hpp</label>
+      </node>
+      <node id="115">
+        <label>../node-mod/node.hpp</label>
+      </node>
+      <node id="143">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="177">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/list/detail/fold_right.hpp</label>
+      </node>
+      <node id="134">
+        <label>C:/BOOST/boost_1_71_0/boost/config/workaround.hpp</label>
+      </node>
+      <node id="111">
+        <label>string</label>
+      </node>
+      <node id="220">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/integral_constant.hpp</label>
+      </node>
+      <node id="190">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="165">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/repetition/repeat_from_to.hpp</label>
+      </node>
+      <node id="235">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/detail/is_function_cxx_11.hpp</label>
+      </node>
+      <node id="139">
+        <label>C:/BOOST/boost_1_71_0/boost/test/detail/suppress_warnings.hpp</label>
+      </node>
+      <node id="229">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/is_complete.hpp</label>
+      </node>
+      <node id="144">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/comparison/not_equal.hpp</label>
+      </node>
+      <node id="128">
+        <label>C:/BOOST/boost_1_71_0/boost/config/detail/select_platform_config.hpp</label>
+      </node>
+      <node id="167">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/arithmetic/dec.hpp</label>
+      </node>
+      <node id="181">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="212">
+        <label>C:/BOOST/boost_1_71_0/boost/test/utils/wrap_stringstream.hpp</label>
+      </node>
+      <node id="204">
+        <label>C:/BOOST/boost_1_71_0/boost/test/utils/basic_cstring/bcs_char_traits.hpp</label>
+      </node>
+      <node id="180">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/control/detail/while.hpp</label>
+      </node>
+      <node id="155">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/debug/error.hpp</label>
+      </node>
+      <node id="142">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/control/iif.hpp</label>
+      </node>
+      <node id="141">
+        <label>C:/BOOST/boost_1_71_0/boost/test/detail/pp_variadic.hpp</label>
+      </node>
+      <node id="192">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/seq/for_each.hpp</label>
+      </node>
+      <node id="132">
+        <label>C:/BOOST/boost_1_71_0/boost/test/detail/config.hpp</label>
+      </node>
+      <node id="216">
+        <label>C:/BOOST/boost_1_71_0/boost/call_traits.hpp</label>
+      </node>
+      <node id="160">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/facilities/expand.hpp</label>
+      </node>
+      <node id="148">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/repetition/enum_params.hpp</label>
+      </node>
+      <node id="116">
+        <label>dist/node-mod/node.hpp</label>
+      </node>
+      <node id="166">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/arithmetic/add.hpp</label>
+      </node>
+      <node id="228">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/is_convertible.hpp</label>
+      </node>
+      <node id="197">
+        <label>C:/BOOST/boost_1_71_0/boost/test/tools/old/impl.hpp</label>
+      </node>
+      <node id="191">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/seq/detail/is_empty.hpp</label>
+      </node>
+      <node id="199">
+        <label>C:/BOOST/boost_1_71_0/boost/test/tree/observer.hpp</label>
+      </node>
+      <node id="133">
+        <label>C:/BOOST/boost_1_71_0/boost/detail/workaround.hpp</label>
+      </node>
+      <node id="193">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/seq/enum.hpp</label>
+      </node>
+      <node id="135">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="171">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/list/detail/fold_left.hpp</label>
+      </node>
+      <node id="113">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/xmemory</label>
+      </node>
+      <node id="168">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/arithmetic/inc.hpp</label>
+      </node>
+      <node id="183">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/tuple/to_seq.hpp</label>
+      </node>
+      <node id="232">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/is_void.hpp</label>
+      </node>
+      <node id="163">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/tuple/detail/is_single_return.hpp</label>
+      </node>
+      <node id="201">
+        <label>C:/BOOST/boost_1_71_0/boost/test/detail/global_typedef.hpp</label>
+      </node>
+      <node id="233">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/remove_reference.hpp</label>
+      </node>
+      <node id="186">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/repetition/for.hpp</label>
+      </node>
+      <node id="150">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="185">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/seq/for_each_i.hpp</label>
+      </node>
+      <node id="120">
+        <label>vector</label>
+      </node>
+      <node id="207">
+        <label>C:/BOOST/boost_1_71_0/boost/version.hpp</label>
+      </node>
+      <node id="157">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/tuple/eat.hpp</label>
+      </node>
+      <node id="202">
+        <label>C:/BOOST/boost_1_71_0/boost/test/utils/basic_cstring/basic_cstring.hpp</label>
+      </node>
+      <node id="151">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/logical/bool.hpp</label>
+      </node>
+      <node id="213">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/sstream</label>
+      </node>
+      <node id="179">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/logical/bitand.hpp</label>
+      </node>
+      <node id="206">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/detail/config.hpp</label>
+      </node>
+      <node id="176">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/list/fold_right.hpp</label>
+      </node>
+      <node id="169">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/control/while.hpp</label>
+      </node>
+      <node id="119">
+        <label>utility</label>
+      </node>
+      <node id="152">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/facilities/empty.hpp</label>
+      </node>
+      <node id="118">
+        <label>sstream</label>
+      </node>
+      <node id="162">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/tuple/rem.hpp</label>
+      </node>
+      <node id="126">
+        <label>C:/BOOST/boost_1_71_0/boost/config.hpp</label>
+      </node>
+      <node id="161">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/facilities/overload.hpp</label>
+      </node>
+      <node id="106">
+        <label>C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp</label>
+        <link refid="main.cpp"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/list/reverse.hpp</label>
+      </node>
+      <node id="129">
+        <label>C:/BOOST/boost_1_71_0/boost/config/detail/suffix.hpp</label>
+      </node>
+      <node id="170">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/list/fold_left.hpp</label>
+      </node>
+      <node id="127">
+        <label>C:/BOOST/boost_1_71_0/boost/config/detail/select_compiler_config.hpp</label>
+      </node>
+      <node id="175">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/detail/check.hpp</label>
+      </node>
+      <node id="184">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/tuple/size.hpp</label>
+      </node>
+      <node id="225">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/is_reference.hpp</label>
+      </node>
+      <node id="215">
+        <label>C:/BOOST/boost_1_71_0/boost/test/utils/class_properties.hpp</label>
+      </node>
+      <node id="107">
+        <label>iostream</label>
+      </node>
+      <node id="209">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/cstddef</label>
+      </node>
+      <node id="224">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/add_reference.hpp</label>
+      </node>
+      <node id="222">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/is_enum.hpp</label>
+      </node>
+      <node id="149">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/punctuation/comma_if.hpp</label>
+      </node>
+      <node id="173">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/list/adt.hpp</label>
+      </node>
+      <node id="227">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/is_rvalue_reference.hpp</label>
+      </node>
+      <node id="122">
+        <label>chrono</label>
+      </node>
+      <node id="153">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="205">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/add_const.hpp</label>
+      </node>
+      <node id="174">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/detail/is_binary.hpp</label>
+      </node>
+      <node id="231">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/add_rvalue_reference.hpp</label>
+      </node>
+      <node id="114">
+        <label>dist/double-linked-list-mod/double_linked_list.hpp</label>
+        <link refid="double__linked__list_8hpp"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/repetition/detail/for.hpp</label>
+      </node>
+      <node id="146">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/logical/compl.hpp</label>
+      </node>
+      <node id="154">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/repetition/repeat.hpp</label>
+      </node>
+      <node id="189">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/seq/elem.hpp</label>
+      </node>
+      <node id="210">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/remove_cv.hpp</label>
+      </node>
+      <node id="110">
+        <label>algorithm</label>
+      </node>
+      <node id="230">
+        <label>C:/BOOST/boost_1_71_0/boost/type_traits/declval.hpp</label>
+      </node>
+      <node id="147">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/variadic/size.hpp</label>
+      </node>
+      <node id="203">
+        <label>C:/BOOST/boost_1_71_0/boost/test/utils/basic_cstring/basic_cstring_fwd.hpp</label>
+      </node>
+      <node id="121">
+        <label>memory</label>
+      </node>
+      <node id="194">
+        <label>C:/BOOST/boost_1_71_0/boost/test/tools/old/interface.hpp</label>
+      </node>
+      <node id="196">
+        <label>C:/BOOST/boost_1_71_0/boost/core/ignore_unused.hpp</label>
+      </node>
+      <node id="208">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/include/string</label>
+      </node>
+      <node id="195">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/seq/to_tuple.hpp</label>
+      </node>
+      <node id="145">
+        <label>C:/BOOST/boost_1_71_0/boost/preprocessor/cat.hpp</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="main_8cpp_1ab340a5e76af466a5f20ec5500d30a80b" prot="public" static="no">
+        <name>BOOST_TEST_MAIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" line="21" column="9" bodyfile="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8cpp_1a6b2a3852db8bb19ab6909bac01859985" prot="public" static="no">
+        <name>BOOST_TEST_MODULE</name>
+        <initializer>myTests</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" line="22" column="9" bodyfile="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" prot="public" static="no">
+        <name>PRINT</name>
+        <initializer>std::cout &lt;&lt;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" line="23" column="9" bodyfile="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" bodystart="23" bodyend="-1"/>
+        <referencedby refid="main_8cpp_1aad350c69aac75e4c734325bacf65bbb4" compoundref="main_8cpp" startline="28" endline="38">BOOST_AUTO_TEST_CASE</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" prot="public" static="no" mutable="no">
+        <type>auto</type>
+        <definition>auto r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <initializer>= <ref refid="classutil_1_1_run_timer" kindref="compound">util::RunTimer</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" line="26" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" bodystart="26" bodyend="-1"/>
+        <referencedby refid="main_8cpp_1aad350c69aac75e4c734325bacf65bbb4" compoundref="main_8cpp" startline="28" endline="38">BOOST_AUTO_TEST_CASE</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1aad350c69aac75e4c734325bacf65bbb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(case1_dbl_ll)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>case1_dbl_ll</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" line="28" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" bodystart="28" bodyend="38"/>
+        <references refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" compoundref="main_8cpp" startline="23">PRINT</references>
+        <references refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" compoundref="main_8cpp" startline="26">r</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a5b824108f6c125a46f9321f2402d62f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(case2_dbl_ll)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>case2_dbl_ll</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" line="40" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" bodystart="40" bodyend="57"/>
+        <references refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" compoundref="main_8cpp" startline="23">PRINT</references>
+        <references refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" compoundref="main_8cpp" startline="26">r</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a2e7a5b8d5c8151fe7c2a283d6568ab46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(case3_util)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>case3_util</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" line="59" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" bodystart="59" bodyend="73"/>
+        <references refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" compoundref="main_8cpp" startline="23">PRINT</references>
+        <references refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" compoundref="main_8cpp" startline="26">r</references>
+        <references refid="namespaceutil_1a6dddadf54219a5e7d7fcbf0afa8e53c5" compoundref="util_8hpp" startline="16" endline="29">util::split</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a46be58dc5b76b7e12b08f1e687633abd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(case4_util)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>case4_util</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" line="76" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" bodystart="76" bodyend="86"/>
+        <references refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" compoundref="main_8cpp" startline="23">PRINT</references>
+        <references refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" compoundref="main_8cpp" startline="26">r</references>
+        <references refid="classutil_1_1csv_1a0653480eb0eae9c4d28d568a78afdc8e" compoundref="util_8cpp" startline="36" endline="42">util::csv::read_csv</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a75492a11f9eecfba6a7ff9835d6c815c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(case5_dbl_ll)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>case5_dbl_ll</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" line="88" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" bodystart="88" bodyend="102"/>
+        <references refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" compoundref="main_8cpp" startline="23">PRINT</references>
+        <references refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" compoundref="main_8cpp" startline="26">r</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1ab5923bf7dbc5a786c0773d2d999d4f0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(case6_dbl_ll)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>case6_dbl_ll</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" line="104" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" bodystart="104" bodyend="115"/>
+        <references refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" compoundref="main_8cpp" startline="23">PRINT</references>
+        <references refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" compoundref="main_8cpp" startline="26">r</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a206f8755c573e62211fcc916ed9af842" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(case7_dbl_ll__iter)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>case7_dbl_ll__iter</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" line="117" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" bodystart="117" bodyend="140"/>
+        <references refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" compoundref="main_8cpp" startline="23">PRINT</references>
+        <references refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" compoundref="main_8cpp" startline="26">r</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a0436acb2835f9950f67c5bbebe8dd3f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(case7_dbl_ll)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>case7_dbl_ll</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" line="142" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" bodystart="142" bodyend="156"/>
+        <references refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" compoundref="main_8cpp" startline="23">PRINT</references>
+        <references refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" compoundref="main_8cpp" startline="26">r</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a1c03069360f1f90a556eb537e0ff8a72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argv, char **argc)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" line="163" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp" bodystart="163" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Name:<sp/>Daniel<sp/>Herrera</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Date:<sp/>/<sp/>/</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Desc:</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//standard<sp/>libs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>my<sp/>libraries</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="double__linked__list_8hpp" kindref="compound">dist/double-linked-list-mod/double_linked_list.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dist/node-mod/node.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="util_8hpp" kindref="compound">dist/util-mod/util.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//====================<sp/>DEBUG<sp/>ADAPTER<sp/>MODE<sp/>===================//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>_DEBUG</highlight></codeline>
+<codeline lineno="21" refid="main_8cpp_1ab340a5e76af466a5f20ec5500d30a80b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOOST_TEST_MAIN</highlight></codeline>
+<codeline lineno="22" refid="main_8cpp_1a6b2a3852db8bb19ab6909bac01859985" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOOST_TEST_MODULE<sp/>myTests</highlight></codeline>
+<codeline lineno="23" refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PRINT<sp/>std::cout<sp/>&lt;&lt;</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/test/unit_test.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref><sp/>=<sp/><ref refid="classutil_1_1_run_timer" kindref="compound">util::RunTimer</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="main_8cpp_1aad350c69aac75e4c734325bacf65bbb4" refkind="member"><highlight class="normal"><ref refid="main_8cpp_1aad350c69aac75e4c734325bacf65bbb4" kindref="member">BOOST_AUTO_TEST_CASE</ref>(case1_dbl_ll)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.start();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>linears_dh::Node&lt;int&gt;*<sp/>node<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>linears_dh::dbl_node&lt;int&gt;(10);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>node;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.finish();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>__TIMESTAMP__<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;==&gt;<sp/>D.HERRERA.V<sp/>0881570\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" kindref="member">PRINT</ref><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.logging(</highlight><highlight class="stringliteral">&quot;|<sp/>case<sp/>1:<sp/>&lt;linears_dh::dbl_node=init-test&gt;&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight><highlight class="comment">//end<sp/>case1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40" refid="main_8cpp_1a5b824108f6c125a46f9321f2402d62f3" refkind="member"><highlight class="normal"><ref refid="main_8cpp_1aad350c69aac75e4c734325bacf65bbb4" kindref="member">BOOST_AUTO_TEST_CASE</ref>(case2_dbl_ll)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test<sp/>push-back</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>confirm<sp/>test<sp/>destructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.start();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/>lst1<sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classlinears__dh_1_1_double__linked__list" kindref="compound">linears_dh::Double_linked_list&lt;int&gt;</ref>);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>lst1-&gt;push_back(51);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>lst1-&gt;push_back(42);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>lst1-&gt;push_back(33);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>lst1-&gt;push_back(24);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>lst1-&gt;push_back(15);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>lst1;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.finish();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" kindref="member">PRINT</ref><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.logging(</highlight><highlight class="stringliteral">&quot;|<sp/>case<sp/>2:<sp/>&lt;linears_dh::push_back=D_l_l-test&gt;&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="main_8cpp_1a2e7a5b8d5c8151fe7c2a283d6568ab46" refkind="member"><highlight class="normal"><ref refid="main_8cpp_1aad350c69aac75e4c734325bacf65bbb4" kindref="member">BOOST_AUTO_TEST_CASE</ref>(case3_util)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>list&lt;string&gt;<sp/>a;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>test_to[9]<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;the&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;quick&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;brown&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;fox&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;jumped&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;over&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;the&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;lazy&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;dog&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.start();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceutil_1a6dddadf54219a5e7d7fcbf0afa8e53c5" kindref="member">util::split</ref>(</highlight><highlight class="stringliteral">&quot;the,quick,brown,fox,jumped,over,the,lazy,dog&quot;</highlight><highlight class="normal">,<sp/>a,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>for_each(a.begin(),<sp/>a.end(),<sp/>[&amp;test_to,<sp/>&amp;i](</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>x)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(x,<sp/>test_to[i]);<sp/>++i;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.finish();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" kindref="member">PRINT</ref><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.logging(</highlight><highlight class="stringliteral">&quot;|<sp/>case<sp/>3:<sp/>&lt;util::split-test&gt;&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//TODO:<sp/>not<sp/>reading<sp/>file<sp/>correctly</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="main_8cpp_1a46be58dc5b76b7e12b08f1e687633abd" refkind="member"><highlight class="normal"><ref refid="main_8cpp_1aad350c69aac75e4c734325bacf65bbb4" kindref="member">BOOST_AUTO_TEST_CASE</ref>(case4_util)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.start();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>shared_ptr&lt;util::csv&gt;<sp/>my_csv{<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classutil_1_1csv" kindref="compound">util::csv</ref>(</highlight><highlight class="stringliteral">&quot;util_csv_test1.csv&quot;</highlight><highlight class="normal">)<sp/>};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>my_csv-&gt;<ref refid="classutil_1_1csv_1a0653480eb0eae9c4d28d568a78afdc8e" kindref="member">read_csv</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>my_csv-&gt;str();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.finish();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" kindref="member">PRINT</ref><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.logging(</highlight><highlight class="stringliteral">&quot;|<sp/>case<sp/>4:<sp/>&lt;util::csv=init+methods-test&gt;&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="main_8cpp_1a75492a11f9eecfba6a7ff9835d6c815c" refkind="member"><highlight class="normal"><ref refid="main_8cpp_1aad350c69aac75e4c734325bacf65bbb4" kindref="member">BOOST_AUTO_TEST_CASE</ref>(case5_dbl_ll)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pop_back<sp/>test</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.start();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/>str_lst1(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classlinears__dh_1_1_double__linked__list" kindref="compound">linears_dh::Double_linked_list&lt;string&gt;</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>10;<sp/>++i)<sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>str_lst1-&gt;push_back(</highlight><highlight class="stringliteral">&quot;pos&quot;</highlight><highlight class="normal"><sp/>+<sp/>to_string(i));</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>str_lst1-&gt;pop_back();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>str_lst1;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.finish();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" kindref="member">PRINT</ref><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.logging(</highlight><highlight class="stringliteral">&quot;|<sp/>case<sp/>5:<sp/>&lt;linears_dh::pop_back=D_l_l-test&gt;&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="main_8cpp_1ab5923bf7dbc5a786c0773d2d999d4f0a" refkind="member"><highlight class="normal"><ref refid="main_8cpp_1aad350c69aac75e4c734325bacf65bbb4" kindref="member">BOOST_AUTO_TEST_CASE</ref>(case6_dbl_ll)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.start();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/>lst_dbl<sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classlinears__dh_1_1_double__linked__list" kindref="compound">linears_dh::Double_linked_list&lt;double&gt;</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>10;<sp/>++i)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lst_dbl-&gt;push_front(static_cast&lt;double&gt;(i));</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>lst_dbl;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.finish();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" kindref="member">PRINT</ref><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.logging(</highlight><highlight class="stringliteral">&quot;|<sp/>case<sp/>6:<sp/>&lt;linears_dh::push_front=D_l_l-test&gt;&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="main_8cpp_1a206f8755c573e62211fcc916ed9af842" refkind="member"><highlight class="normal"><ref refid="main_8cpp_1aad350c69aac75e4c734325bacf65bbb4" kindref="member">BOOST_AUTO_TEST_CASE</ref>(case7_dbl_ll__iter)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//double<sp/>linked<sp/>list<sp/>iterator<sp/>test</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.start();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/>linked_list(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classlinears__dh_1_1_double__linked__list" kindref="compound">linears_dh::Double_linked_list&lt;string&gt;</ref>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>a[]<sp/>=<sp/>{<sp/></highlight><highlight class="stringliteral">&quot;D&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;A&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;N&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;I&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;E&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;L&quot;</highlight><highlight class="normal"><sp/>};<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>oioioi<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>linked_list-&gt;push_back(</highlight><highlight class="stringliteral">&quot;D&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>linked_list-&gt;push_back(</highlight><highlight class="stringliteral">&quot;A&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>linked_list-&gt;push_back(</highlight><highlight class="stringliteral">&quot;N&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>linked_list-&gt;push_back(</highlight><highlight class="stringliteral">&quot;I&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>linked_list-&gt;push_back(</highlight><highlight class="stringliteral">&quot;E&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>linked_list-&gt;push_back(</highlight><highlight class="stringliteral">&quot;L&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>linked_list-&gt;begin();<sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i.operator!=(linked_list-&gt;end());<sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(*i,<sp/>a[oioioi]);<sp/>++oioioi;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>linked_list;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.finish();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" kindref="member">PRINT</ref><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.logging(</highlight><highlight class="stringliteral">&quot;|<sp/>case<sp/>7:<sp/>&lt;linears_dh::iter=D_l_l-test&gt;&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="main_8cpp_1a0436acb2835f9950f67c5bbebe8dd3f9" refkind="member"><highlight class="normal"><ref refid="main_8cpp_1aad350c69aac75e4c734325bacf65bbb4" kindref="member">BOOST_AUTO_TEST_CASE</ref>(case7_dbl_ll)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.start();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/>pop_front_list_ut<sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classlinears__dh_1_1_double__linked__list" kindref="compound">linears_dh::Double_linked_list&lt;string&gt;</ref>);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>64;<sp/>i<sp/>&lt;<sp/>97;<sp/>++i)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pop_front_list_ut-&gt;push_back(to_string(i));</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.restart();</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" kindref="member">PRINT</ref><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.logging(</highlight><highlight class="stringliteral">&quot;|<sp/>case<sp/>8:<sp/>&lt;linears_dh::pop_front-test&gt;&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>pop_front_list_ut;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.finish();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a8b43bafee90b30676faae508c21cb8d7" kindref="member">PRINT</ref><sp/><ref refid="main_8cpp_1a76be2f40de03334f34eaf465efc0e0e0" kindref="member">r</ref>.logging(</highlight><highlight class="stringliteral">&quot;|<sp/>case<sp/>8:<sp/>&lt;linears_dh::pop_front-test&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DEBUG</highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//================<sp/>RELEASE<sp/>MODE<sp/>OPTIMIZATION<sp/>=================//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_DEBUG</highlight></codeline>
+<codeline lineno="163" refid="main_8cpp_1a1c03069360f1f90a556eb537e0ff8a72" refkind="member"><highlight class="preprocessor"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a1c03069360f1f90a556eb537e0ff8a72" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argc)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EXIT_SUCCESS;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight><highlight class="comment">//end<sp/>testing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!_DEBUG</highlight></codeline>
+    </programlisting>
+    <location file="C:/#GITHUB/Play-Ground2/compsci/testing_proj/main.cpp"/>
+  </compounddef>
+</doxygen>

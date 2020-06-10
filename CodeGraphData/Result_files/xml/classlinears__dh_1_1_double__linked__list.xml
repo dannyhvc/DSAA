@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classlinears__dh_1_1_double__linked__list" kind="class" prot="public">
+    <compoundname>linears_dh::Double_linked_list</compoundname>
+    <basecompoundref prot="protected" virt="non-virtual">dbl_node&lt; _Ty &gt;</basecompoundref>
+    <includes refid="double__linked__list_8hpp" local="no">double_linked_list.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>_Ty</declname>
+        <defname>_Ty</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="user-defined">
+      <header>Double_linked_list</header>
+      <description><para><simplesect kind="author"><para>Daniel Herrera</para></simplesect>
+<ref refid="classlinears__dh_1_1_double__linked__list" kindref="compound">Double_linked_list</ref> constant qualified template typed ==============Description============== Deep copy constructor for heap deep copy </para></description>
+      <memberdef kind="function" id="classlinears__dh_1_1_double__linked__list_1a3af1d1cf35f12e0eff9f83414f4ab270" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>linears_dh::Double_linked_list&lt; _Ty &gt;::Double_linked_list</definition>
+        <argsstring>(iterator const &amp;beginning, iterator const &amp;ending)</argsstring>
+        <name>Double_linked_list</name>
+        <param>
+          <type>iterator const &amp;</type>
+          <declname>beginning</declname>
+        </param>
+        <param>
+          <type>iterator const &amp;</type>
+          <declname>ending</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="113" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classlinears__dh_1_1_double__linked__list_1ace74210e3dd72462bf6ad49e50a27bb2" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>linears_dh::Double_linked_list&lt; _Ty &gt;::Double_linked_list</definition>
+        <argsstring>(Double_linked_list const &amp;lst)</argsstring>
+        <name>Double_linked_list</name>
+        <param>
+          <type><ref refid="classlinears__dh_1_1_double__linked__list" kindref="compound">Double_linked_list</ref> const &amp;</type>
+          <declname>lst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="124" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classlinears__dh_1_1_double__linked__list_1aac0585a1e57a3202d98c21664bbd9375" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>linears_dh::Double_linked_list&lt; _Ty &gt;::Double_linked_list</definition>
+        <argsstring>(Double_linked_list *const &amp;lst)</argsstring>
+        <name>Double_linked_list</name>
+        <param>
+          <type><ref refid="classlinears__dh_1_1_double__linked__list" kindref="compound">Double_linked_list</ref> *const &amp;</type>
+          <declname>lst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="135" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="135" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>~Double_linked_list</header>
+      <description><para><simplesect kind="author"><para>Daniel Herrera</para></simplesect>
+==============Description============== Destructor function that loop through every node in the linked list and reduces the size numerically as well as unlinking the node and deleting them using the dbl_node destructor. </para></description>
+      <memberdef kind="function" id="classlinears__dh_1_1_double__linked__list_1a647226afc51c7548a7933cd77d1d7c7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>linears_dh::Double_linked_list&lt; _Ty &gt;::~Double_linked_list</definition>
+        <argsstring>()</argsstring>
+        <name>~Double_linked_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="147" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="147" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classlinears__dh_1_1_double__linked__list_1a4c5bc289ca49ba19d9c787a0031cefaf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>_NODISCARD constexpr size_t</type>
+        <definition>_NODISCARD constexpr size_t linears_dh::Double_linked_list&lt; _Ty &gt;::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="157" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="157" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classlinears__dh_1_1_double__linked__list_1ae4fbe6e3c1cfaf523fbc8c42f91cbae9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>_NODISCARD constexpr bool</type>
+        <definition>_NODISCARD constexpr bool linears_dh::Double_linked_list&lt; _Ty &gt;::is_empty</definition>
+        <argsstring>() const </argsstring>
+        <name>is_empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="158" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="158" bodyend="158"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>push_back</header>
+      <description><para><simplesect kind="author"><para>Daniel Herrera</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant qualified template typed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void ==============Description============== Object method that links a new node on to the back (i.e. tail) of the double linked list. </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="classlinears__dh_1_1_double__linked__list_1ab5a597dd97bcf90e65429db479e1be1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void linears_dh::Double_linked_list&lt; _Ty &gt;::push_back</definition>
+        <argsstring>(_Ty const &amp;val)</argsstring>
+        <name>push_back</name>
+        <param>
+          <type>_Ty const &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="168" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="168" bodyend="178"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>pop_back</header>
+      <description><para><simplesect kind="author"><para>Daniel Herrera</para></simplesect>
+<simplesect kind="return"><para>_Ty ==============Description============== Object method unlinks and deletes the last node on the chain and returns the data value of the unlinked node. </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="classlinears__dh_1_1_double__linked__list_1a59cb28073637773b52ae86a9599eb7d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>_Ty</type>
+        <definition>_Ty linears_dh::Double_linked_list&lt; _Ty &gt;::pop_back</definition>
+        <argsstring>()</argsstring>
+        <name>pop_back</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="187" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="187" bodyend="197"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>: push_front</header>
+      <description><para><simplesect kind="author"><para>Daniel Herrera</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant qualified template typed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void ==============Description============== Apends a node to head (front) of the list. </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="classlinears__dh_1_1_double__linked__list_1a66a5d4204935f698e0167f97d92b1c86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void linears_dh::Double_linked_list&lt; _Ty &gt;::push_front</definition>
+        <argsstring>(_Ty const &amp;val)</argsstring>
+        <name>push_front</name>
+        <param>
+          <type>_Ty const &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="206" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="206" bodyend="216"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>: pop_front</header>
+      <description><para><simplesect kind="author"><para>Daniel Herrera</para></simplesect>
+<simplesect kind="return"><para>void ==============Description============== removes node from the front of the list </para></simplesect>
+</para></description>
+      <memberdef kind="variable" id="classlinears__dh_1_1_double__linked__list_1a12e3e99627c069a955b83af829370511" prot="private" static="no" mutable="no">
+        <type><ref refid="classlinears__dh_1_1_double__linked__list_1a914aa83ab2ed68b685008d168c746082" kindref="member">__pointer_t</ref></type>
+        <definition>__pointer_t linears_dh::Double_linked_list&lt; _Ty &gt;::head_</definition>
+        <argsstring></argsstring>
+        <name>head_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="244" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlinears__dh_1_1_double__linked__list_1ab6401605b61b137d32cebf8827eb9776" prot="private" static="no" mutable="no">
+        <type><ref refid="classlinears__dh_1_1_double__linked__list_1a914aa83ab2ed68b685008d168c746082" kindref="member">__pointer_t</ref></type>
+        <definition>__pointer_t linears_dh::Double_linked_list&lt; _Ty &gt;::tail_</definition>
+        <argsstring></argsstring>
+        <name>tail_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="245" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlinears__dh_1_1_double__linked__list_1a14aca86c88259806221c9e876e8fbdaf" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned linears_dh::Double_linked_list&lt; _Ty &gt;::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="246" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classlinears__dh_1_1_double__linked__list_1adb8f89d46ad0c8b7ff26eff3f60a3346" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>_Ty</type>
+        <definition>_Ty linears_dh::Double_linked_list&lt; _Ty &gt;::pop_front</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>pop_front</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="224" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="224" bodyend="236"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classlinears__dh_1_1_double__linked__list_1a914aa83ab2ed68b685008d168c746082" prot="private" static="no">
+        <type>dbl_node&lt; _Ty &gt; *</type>
+        <definition>using linears_dh::Double_linked_list&lt; _Ty &gt;::__pointer_t =  dbl_node&lt;_Ty&gt;*</definition>
+        <argsstring></argsstring>
+        <name>__pointer_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="15" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlinears__dh_1_1_double__linked__list_1a48c5af5040c01b9c747abd899c3bcdc7" prot="private" static="no">
+        <type>const dbl_node&lt; _Ty &gt; *</type>
+        <definition>using linears_dh::Double_linked_list&lt; _Ty &gt;::__const_pointer_t =  const dbl_node&lt;_Ty&gt;*</definition>
+        <argsstring></argsstring>
+        <name>__const_pointer_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="16" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlinears__dh_1_1_double__linked__list_1a593a72612eeec345b41cc028ea50b0ad" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlinears__dh_1_1_double__linked__list" kindref="compound">Double_linked_list</ref>&lt; _Ty &gt;&gt;</type>
+        <definition>using linears_dh::Double_linked_list&lt; _Ty &gt;::pointer_type =  std::shared_ptr&lt;Double_linked_list&lt;_Ty&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>pointer_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="18" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlinears__dh_1_1_double__linked__list_1a2861a84c4629121c12421de3e5b065f9" prot="public" static="no">
+        <type>const std::shared_ptr&lt; <ref refid="classlinears__dh_1_1_double__linked__list" kindref="compound">Double_linked_list</ref>&lt; _Ty &gt;&gt;</type>
+        <definition>using linears_dh::Double_linked_list&lt; _Ty &gt;::const_pointer_type =  const std::shared_ptr&lt;Double_linked_list&lt;_Ty&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>const_pointer_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="19" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlinears__dh_1_1_double__linked__list_1a74cb1ae8288719ee824a3fbb642abf81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>linears_dh::Double_linked_list&lt; _Ty &gt;::Double_linked_list</definition>
+        <argsstring>()</argsstring>
+        <name>Double_linked_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="101" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="101" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>linears_dh::Double_linked_list&lt; _Ty &gt;</label>
+        <link refid="classlinears__dh_1_1_double__linked__list"/>
+        <childnode refid="5" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dbl_node&lt; _Ty &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>linears_dh::Double_linked_list&lt; _Ty &gt;</label>
+        <link refid="classlinears__dh_1_1_double__linked__list"/>
+        <childnode refid="7" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dbl_node&lt; _Ty &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" line="14" column="1" bodyfile="C:/#GITHUB/Play-Ground2/compsci/dist/double-linked-list-mod/double_linked_list.hpp" bodystart="12" bodyend="247"/>
+    <listofallmembers>
+      <member refid="classlinears__dh_1_1_double__linked__list_1a48c5af5040c01b9c747abd899c3bcdc7" prot="private" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>__const_pointer_t</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1a914aa83ab2ed68b685008d168c746082" prot="private" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>__pointer_t</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1a2861a84c4629121c12421de3e5b065f9" prot="public" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>const_pointer_type</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1a74cb1ae8288719ee824a3fbb642abf81" prot="public" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>Double_linked_list</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1a3af1d1cf35f12e0eff9f83414f4ab270" prot="public" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>Double_linked_list</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1ace74210e3dd72462bf6ad49e50a27bb2" prot="public" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>Double_linked_list</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1aac0585a1e57a3202d98c21664bbd9375" prot="public" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>Double_linked_list</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1a12e3e99627c069a955b83af829370511" prot="private" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>head_</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1ae4fbe6e3c1cfaf523fbc8c42f91cbae9" prot="public" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>is_empty</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1a593a72612eeec345b41cc028ea50b0ad" prot="public" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>pointer_type</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1a59cb28073637773b52ae86a9599eb7d5" prot="public" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>pop_back</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1adb8f89d46ad0c8b7ff26eff3f60a3346" prot="public" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>pop_front</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1ab5a597dd97bcf90e65429db479e1be1d" prot="public" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>push_back</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1a66a5d4204935f698e0167f97d92b1c86" prot="public" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>push_front</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1a4c5bc289ca49ba19d9c787a0031cefaf" prot="public" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>size</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1a14aca86c88259806221c9e876e8fbdaf" prot="private" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>size_</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1ab6401605b61b137d32cebf8827eb9776" prot="private" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>tail_</name></member>
+      <member refid="classlinears__dh_1_1_double__linked__list_1a647226afc51c7548a7933cd77d1d7c7a" prot="public" virt="non-virtual"><scope>linears_dh::Double_linked_list</scope><name>~Double_linked_list</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
