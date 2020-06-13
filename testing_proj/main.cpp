@@ -139,20 +139,35 @@ BOOST_AUTO_TEST_CASE(case7_dbl_ll__iter)
 	PRINT r.logging("| case 7: <linears_dh::iter=D_l_l-test>") << endl;
 }
 
-BOOST_AUTO_TEST_CASE(case7_dbl_ll)
+BOOST_AUTO_TEST_CASE(case8_dbl_ll)
 {
 	cout << endl;
 	r.start();
 	auto* pop_front_list_ut (new linears_dh::Double_linked_list<string>);
 	for (auto i = 64; i < 97; ++i)
 		pop_front_list_ut->push_back(to_string(i));
-	r.restart();
+
+	r.addPivotTime();
 	PRINT r.logging("| case 8: <linears_dh::pop_front-test>") << endl;
 	delete pop_front_list_ut;
 	r.finish();
 	//
 	//
 	PRINT r.logging("| case 8: <linears_dh::pop_front-test>");
+}
+
+BOOST_AUTO_TEST_CASE(case9_RunT_pivot)
+{
+	r.start();
+	for (auto i = 0; i < 100000; ++i);
+	r.addPivotTime();
+	for (auto i = 0; i < 10000; ++i);
+	r.addPivotTime();
+	for (auto i = 0; i < 1000000; ++i);
+	r.addPivotTime();
+	for (auto i = 0; i < 10000; ++i);
+	r.finish();
+	r.TimeStamps();
 }
 
 

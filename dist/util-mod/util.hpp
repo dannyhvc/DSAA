@@ -28,8 +28,9 @@ namespace util
 		if (ss) container.push_back(ss.str());
 	}//end split
 	
-	/**@author Daniel Herrera
-	 * csv Class, standard layout class for reading and wriing to a csv.
+	/**
+	 *@author Daniel Herrera
+	 *@description csv Class, standard layout class for reading and wriing to a csv.
 	 */
 	class csv
 	{
@@ -43,61 +44,78 @@ namespace util
 			fname_cs_(std::move(fn)) {}
 		~csv() = default;
 		
-		std::vector<std::vector<std::string>> read_csv();
-		std::vector<std::vector<std::string>> parse(std::istream& bis);
+		std::vector<std::vector<std::string>> read_csv() const;
+		std::vector<std::vector<std::string>> parse(std::istream& bis) const;
 		std::string str() const;
 	};
 
+	
+	
 	/**@author Daniel Herrera
 	 * RunTimere Class
 	 */
 	class RunTimer
 	{
 	private:
-		using time_unit = std::chrono::steady_clock::time_point;
-		time_unit start_time_point_;
-		time_unit end_time_point_;
-		const double CONVERT_2MSECONDS = 1'000'000;
+		using time_unit = std::chrono::time_point<std::chrono::steady_clock>;
 		
-	public: //todo: fix the restart functionality
+	public:
+		// ---------------------------- Construction ---------------------------- */
 		explicit RunTimer() = default;
 		~RunTimer() = default;
 
-		/* init on time start using chrono::now */
-		auto start() {
-			this->start_time_point_ = std::chrono::high_resolution_clock::now();
-			return start_time_point_;
-		}
+		/* ============================ Inits methods ============================ */
+		time_unit start(); /* init on time start using chrono::now */
+		time_unit finish(); /* init on time after start */
 
-		/* init on time after start */
-		auto finish() {
-			this->end_time_point_ = std::chrono::high_resolution_clock::now();
-			return end_time_point_;
-		}
-
+		/* ---------------------------- Calculationals ---------------------------- */
+		/** returns current high resulotion time_point<steady_clock> obj to define current pivot time */
 		/* return time elapsed in seconds */
-		constexpr auto elapsed() const {
-			const auto t1 = std::chrono::duration_cast<std::chrono::nanoseconds>(
-				end_time_point_ - start_time_point_
-			);
-			return t1.count() / CONVERT_2MSECONDS;
-		}
+		constexpr auto elapsed() const;
+		static constexpr double elapsed(time_unit const& fin, time_unit const& beg);
+		static constexpr double elapsed(const long long fin, const long long beg);
 
+		/* ============================ Intervals ============================ */
+		long long addPivotTime();
+
+		/* ---------------------------- Accessors ---------------------------- */
+		auto getPivotTimes() const { return this->pivot_times_; }
+		std::vector<long long> TimeStamps() const;
+
+		
+		/* ============================ Construction ============================ */
 		/* logs the amount of time a specific task took to complete in milliseconds */
-		auto logging(const std::string& s="") const {
-			/**
-			 * logging conventions:
-			 *		| "name": 
-			 *		<namespace::("test conjugate"_1+"test conjugate"_2="class abreviation")-test>
-			 *
-			 *	if global method:
-			 *		<namespace::"method(s) name"-test>
-			 *	elif multi paradigm test:
-			 *		<"test culture brief"::"pass/fail expected"-test>
-			 */
-			std::ostringstream oss;
-			oss << std::setprecision(5) << std::fixed << elapsed() <<"ms " << s;
-			return oss.str();
-		}
+		std::string logging(const std::string& s = "") const;
+
+	private:
+		// **** CONSTANTS **** //
+		const double TO_MSEC = 1'000'000;
+
+		// **** MEMBERS **** //
+		time_unit start_time_point_;
+		time_unit end_time_point_;
+
+		// **** Stamp Containers **** //
+		std::vector<long long> pivot_times_;
+		std::vector<long long> times_stamps_;
 	};
+
+	constexpr auto RunTimer::elapsed() const
+	{
+		const auto t1 = std::chrono::duration_cast<std::chrono::nanoseconds>(
+			end_time_point_ - start_time_point_
+		);
+		return t1.count() / TO_MSEC;
+	}
+
+	constexpr double RunTimer::elapsed(time_unit const& fin, time_unit const& beg)
+	{
+		const auto t1 = std::chrono::duration_cast<std::chrono::nanoseconds>(fin - beg);
+		return t1.count() / static_cast<double>(1'000'000); // ~= CONVERT_2_MSECONDS
+	}
+
+	constexpr double RunTimer::elapsed(const long long fin, const long long beg)
+	{
+		return (fin - beg) / static_cast<double>(1'000); // ~= CONVERT_2_MSECONDS
+	}
 }
