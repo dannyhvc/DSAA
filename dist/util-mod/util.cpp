@@ -68,48 +68,60 @@ namespace util
 	
 	RunTimer::time_unit RunTimer::start()
 	{
-		pivot_times_.clear();
-		this->start_time_point_ = high_resolution_clock::now();
-		this->addPivotTime();
-		return start_time_point_;
-	}
+		_pivot_times.clear(); // get rid of useless recalculations
+		this->start_time_point_ = high_resolution_clock::now(); // start time immidiately
+		this->add_pivot_time("started"); // log pivot
+		return start_time_point_; // ret start time_point
+	}//end start
+
+	RunTimer::time_unit RunTimer::start(std::string const& s)
+	{
+		_pivot_times.clear(); // get rid of useless recalculations
+		this->start_time_point_ = high_resolution_clock::now(); // start time immidiately
+		this->add_pivot_time(s); // log pivot
+		return start_time_point_; // ret start time_point
+	}//end start
 
 	RunTimer::time_unit RunTimer::finish()
 	{
-		this->end_time_point_ = high_resolution_clock::now();
-		this->addPivotTime();
-		if (pivot_times_.size() > 1)
-			this->times_stamps_ = std::vector<long long>(this->pivot_times_.size() - 1);
-		for (auto i = 0; i < times_stamps_.size(); ++i)
-			times_stamps_[i] = pivot_times_[i + 1] - pivot_times_[i];
+		this->end_time_point_ = high_resolution_clock::now(); // end time = now time
+		this->add_pivot_time("finished"); // log pivot
+		if (_pivot_times.size() <= 1)
+			return end_time_point_;
+		
+		// add time stamp diff
+		for (size_t i = 0; i < _pivot_times.size() - 1; ++i)
+		{
+			_times_stamps.push_back(_pivot_times[i + 1] - _pivot_times[i]);
+		}
+		return end_time_point_; // ret current time_point
+	}//end finish
+
+	RunTimer::time_unit RunTimer::finish(std::string const& s)
+	{
+		this->end_time_point_ = high_resolution_clock::now(); // end time = now time
+		this->add_pivot_time(s); // log pivot
+		if (_pivot_times.size() <= 1)
+			return end_time_point_;
+
+		// add time stamp diff
+		for (size_t i = 0; i < _pivot_times.size() - 1; ++i)
+			_times_stamps.push_back(_pivot_times[i + 1] - _pivot_times[i]);
+		
 		return end_time_point_;
-	}
+	}// end finish
 
-	std::vector<long long> RunTimer::TimeStamps() const
-	{
-		return this->times_stamps_;
-	}
+	std::vector<long long> RunTimer::time_stamps() const { return this->_times_stamps; }
 
-	/**
-	 * ~addPivotTime~
-	 * object method to describe the time elaspsed from previous exec to final exec
-	 *
-	 * @returns double
-	 */
-	long long RunTimer::addPivotTime()
+	long long RunTimer::add_pivot_time(std::string const& str)
 	{
-		/*double reduce = 0.0;
-		std::for_each(pivot_times_.begin(), pivot_times_.end(), 
-			[&reduce](auto elem) {
-				reduce += elem;
-			}
-		);*/
 		const auto ms = time_point_cast<nanoseconds>(system_clock::now()).time_since_epoch().count();
-		pivot_times_.push_back(ms);
-		return *(pivot_times_.end() - 1);
+		_verbose.push_back(str); // formatting
+		_pivot_times.push_back(ms); // add to times for actual use
+		return *(_pivot_times.end() - 1); // return last for updated time slot
 	}//end addPivotTime
 
-	std::string RunTimer::logging(const std::string& s) const
+	std::string RunTimer::logging() const
 	{
 		/**
 		 * logging conventions:
@@ -122,7 +134,12 @@ namespace util
 		 *		<"test culture brief"::"pass/fail expected"-test>
 		 */
 		std::ostringstream oss;
-		oss << std::setprecision(5) << std::fixed << elapsed() << "ms " << s;
+		
+		for (size_t i = 0; i < _verbose.size(); ++i) 
+			///TODO logic error
+			/// _verbose > _timestamps and iters don't line up
+			oss << _verbose[i] << " " << _times_stamps[i] << " ns" << std::endl; 
 		return oss.str();
 	}
+	
 }

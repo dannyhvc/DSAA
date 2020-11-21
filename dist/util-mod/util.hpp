@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include <string>
 #include <sstream>
 #include <utility>
@@ -10,7 +10,8 @@
 namespace util
 {
 	/**
-	 * \params 
+	 * \params
+	 * 🍕
 	 */
 	template <typename Container>
 	constexpr void split(const std::string& str, Container& container, const char delims)
@@ -66,7 +67,9 @@ namespace util
 
 		/* ============================ Inits methods ============================ */
 		time_unit start(); /* init on time start using chrono::now */
+		time_unit start(std::string const& s);
 		time_unit finish(); /* init on time after start */
+		time_unit finish(std::string const& s);
 
 		/* ---------------------------- Calculationals ---------------------------- */
 		/** returns current high resulotion time_point<steady_clock> obj to define current pivot time */
@@ -76,38 +79,41 @@ namespace util
 		static constexpr double elapsed(const long long fin, const long long beg);
 
 		/* ============================ Intervals ============================ */
-		long long addPivotTime();
+		long long add_pivot_time(std::string const& str);
 
 		/* ---------------------------- Accessors ---------------------------- */
-		auto getPivotTimes() const { return this->pivot_times_; }
-		std::vector<long long> TimeStamps() const;
-
+		auto get_pivot_times() const { return this->_pivot_times; }
+		std::vector<long long> time_stamps() const;
 		
 		/* ============================ Construction ============================ */
 		/* logs the amount of time a specific task took to complete in milliseconds */
-		std::string logging(const std::string& s = "") const;
+		std::string logging() const;
+		//std::string logging(const std::string& s = "") const;
 
 	private:
 		// **** CONSTANTS **** //
 		const double TO_MSEC = 1'000'000;
-
+		
 		// **** MEMBERS **** //
 		time_unit start_time_point_;
 		time_unit end_time_point_;
 
 		// **** Stamp Containers **** //
-		std::vector<long long> pivot_times_;
-		std::vector<long long> times_stamps_;
-	};
-
+		std::vector<long long>	 _pivot_times;
+		std::vector<long long>	 _times_stamps = {0};
+		std::vector<std::string> _verbose;
+	};///end class
+	
 	constexpr auto RunTimer::elapsed() const
 	{
-		const auto t1 = std::chrono::duration_cast<std::chrono::nanoseconds>(
+		const auto t1 = std::chrono::duration_cast<std::chrono::nanoseconds>
+		(
 			end_time_point_ - start_time_point_
 		);
 		return t1.count() / TO_MSEC;
 	}
 
+	/** Calculates the difference in time as the elapsed time between them. */
 	constexpr double RunTimer::elapsed(time_unit const& fin, time_unit const& beg)
 	{
 		const auto t1 = std::chrono::duration_cast<std::chrono::nanoseconds>(fin - beg);
